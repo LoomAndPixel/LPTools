@@ -1,0 +1,24 @@
+---
+layout: default
+---
+{%- assign rel = site.tools | where: "slug", page.tool | first -%}
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/guides/">Guides</a> / {{ page.crumb | default: page.title }}</nav>
+<article class="tool guide">
+  <h1>{{ page.title }}</h1>
+  <p class="lead">{{ page.description }}</p>
+  <p class="meta">Updated {{ page.date | date: "%B %-d, %Y" }}</p>
+  {{ content }}
+  {% if rel %}<p class="note">Related tool: <a href="{{ rel.url }}">{{ rel.name }}</a>. {{ rel.summary }}</p>{% endif %}
+</article>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"BreadcrumbList","itemListElement":[
+{"@type":"ListItem","position":1,"name":"Home","item":"{{ site.url }}/"},
+{"@type":"ListItem","position":2,"name":"Guides","item":"{{ site.url }}/guides/"},
+{"@type":"ListItem","position":3,"name":{{ page.title | jsonify }},"item":"{{ site.url }}{{ page.url }}"}]},
+{"@type":"Article","headline":{{ page.title | jsonify }},"description":{{ page.description | jsonify }},"datePublished":"{{ page.date | date: '%Y-%m-%d' }}","dateModified":"{{ page.date | date: '%Y-%m-%d' }}","mainEntityOfPage":"{{ site.url }}{{ page.url }}","author":{"@type":"Organization","name":"Loom & Pixel"},"publisher":{"@type":"Organization","name":"LP Tools"}}
+]}
+</script>
+{% if page.faq %}<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for item in page.faq %}{"@type":"Question","name":{{ item.q | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ item.a | jsonify }}}}{% unless forloop.last %},{% endunless %}{% endfor %}]}
+</script>{% endif %}
