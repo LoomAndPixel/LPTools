@@ -4,7 +4,8 @@ description: "LP Tools makes scripts and plugins for 3D, animation and VFX apps,
 url: "https://lptools.store"
 lang: en
 store_url: "https://lptools.gumroad.com"
-support_email: "Tools@LoomAndPixel.com"
+support_email: "support@lptools.store"
+support_email_display: "support@LPTools.store"
 share_image: /assets/img/og-image.png
 
 exclude:
