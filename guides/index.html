@@ -1,0 +1,10 @@
+---
+layout: default
+title: Guides
+description: "Guides and answers for Maya and other 3D apps from LP Tools: modifier stacks, Mixamo rigging fixes and more."
+permalink: /guides/
+---
+<h1>Guides</h1>
+<p class="lead">Short answers to common questions about Maya and other 3D apps.</p>
+<ul class="guide-list">{% assign gs = site.guides | sort: "date" | reverse %}{% for g in gs %}
+<li><a href="{{ g.url }}">{{ g.title }}</a><br><span class="meta">{{ g.description }}</span></li>{% endfor %}</ul>

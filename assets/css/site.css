@@ -28,3 +28,7 @@ footer{border-top:1px solid var(--line);margin-top:48px;padding-top:16px;padding
 .fig-left{float:left;width:46%;margin:4px 24px 16px 0}
 .tool h2{clear:both}
 @media (max-width:640px){.fig-right,.fig-left{float:none;width:100%;margin:16px 0}}
+.meta{color:var(--muted);font-size:.9rem}
+.guide-list{list-style:none;padding:0}
+.guide-list li{padding:12px 0;border-bottom:1px solid var(--line)}
+.guide-list a{font-weight:600;font-size:1.1rem}
