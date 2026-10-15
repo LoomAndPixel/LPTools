@@ -1,0 +1,5 @@
+# One entry per DCC app, in display order. Tool pages set `dcc: <key>` in front matter.
+maya:
+  name: Maya
+  full: Autodesk Maya
+  blurb: Animation, rigging, modeling and lookdev tools for Autodesk Maya.

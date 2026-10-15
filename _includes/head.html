@@ -1,0 +1,19 @@
+{%- if page.layout == 'tool' %}{% assign t = page %}{% endif -%}
+{%- capture page_title -%}{% if t %}{{ t.title }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}: {{ site.tagline }}{% endif %}{%- endcapture -%}
+{%- assign page_desc = t.description | default: page.description | default: site.description -%}
+{%- assign canon = page.url | replace: 'index.html', '' | prepend: site.url -%}
+{%- assign img = site.share_image -%}
+{%- if t %}{% capture img %}/assets/img/tools/{{ page.slug }}-cover.webp{% endcapture %}{% endif -%}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page_title | strip }}{% if t or page.title %} | LP Tools{% endif %}</title>
+<meta name="description" content="{{ page_desc | strip | escape }}">
+<link rel="canonical" href="{{ canon }}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LP Tools">
+<meta property="og:title" content="{{ page_title | strip | escape }}">
+<meta property="og:description" content="{{ page_desc | strip | escape }}">
+<meta property="og:url" content="{{ canon }}">
+<meta property="og:image" content="{{ img | prepend: site.url }}">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/css/site.css?v={{ site.time | date: '%s' }}">

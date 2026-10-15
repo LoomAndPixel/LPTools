@@ -1,0 +1,10 @@
+---
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% for p in site.pages %}{% unless p.sitemap == false or p.url contains '.xml' or p.url contains '.txt' or p.url contains '404' %}  <url><loc>{{ site.url }}{{ p.url | replace: 'index.html', '' }}</loc></url>
+{% endunless %}{% endfor %}{% for p in site.tools %}  <url><loc>{{ site.url }}{{ p.url }}</loc></url>
+{% endfor %}{% for p in site.docs %}  <url><loc>{{ site.url }}{{ p.url }}</loc></url>
+{% endfor %}{% for p in site.guides %}  <url><loc>{{ site.url }}{{ p.url }}</loc></url>
+{% endfor %}</urlset>

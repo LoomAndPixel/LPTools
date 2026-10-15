@@ -1,0 +1,3 @@
+{%- assign key = include.slug | append: "-" | append: include.name | append: ".webp" -%}
+{%- assign dim = site.data.images[key] -%}
+<figure class="fig{% if include.side %} fig-{{ include.side }}{% endif %}"><img src="/assets/img/tools/{{ key }}" width="{{ dim[0] }}" height="{{ dim[1] }}" loading="lazy" alt="{{ include.alt }}">{% if include.caption %}<figcaption>{{ include.caption }}</figcaption>{% endif %}</figure>

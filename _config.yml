@@ -1,0 +1,25 @@
+title: LP Tools
+tagline: Scripts and plugins for Maya and other 3D and VFX apps
+description: "LP Tools makes scripts and plugins for 3D, animation and VFX apps, starting with Maya: a 3ds Max style modifier stack, an animation toolkit, glTF import and export, camera tools, materials and more. Tutorials and documentation for every tool."
+url: "https://lptools.store"
+lang: en
+store_url: "https://lptools.gumroad.com"
+support_email: "Tools@LoomAndPixel.com"
+share_image: /assets/img/og-image.png
+
+exclude:
+  - scripts
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+collections:
+  tools:
+    output: true
+    permalink: /tools/:name/
+  docs:
+    output: true
+    permalink: /docs/:path/
+  guides:
+    output: true
+    permalink: /guides/:name/

@@ -1,0 +1,24 @@
+---
+layout: default
+---
+{%- assign t = page -%}
+{%- assign g = site.data.gumroad[t.gumroad] -%}
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / {%- assign dcc = site.data.dccs[t.dcc] -%}<a href="/{{ t.dcc }}/">{{ dcc.name }}</a> / {{ t.name }}</nav>
+<article class="tool">
+  <h1>{{ t.title }}</h1>
+  <p class="lead">{{ t.summary }}</p>
+  <p><a class="btn" href="{{ g.short_url }}">Get the tool</a></p>
+  <img class="cover" src="/assets/img/tools/{{ page.slug }}-cover.webp" width="1280" height="720" alt="{{ t.name }} in {{ dcc.name }}">
+  <h2>What it does</h2>
+  <ul>{% for f in t.features %}<li>{{ f }}</li>{% endfor %}</ul>
+  {{ content }}
+  {% if t.note %}<p class="note">{{ t.note }}</p>{% endif %}
+  {% if t.faq %}<h2>FAQ</h2>{% for item in t.faq %}<h3>{{ item.q }}</h3><p>{{ item.a }}</p>{% endfor %}{% endif %}
+  <p><a class="btn" href="{{ g.short_url }}">Get the tool</a></p>
+</article>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":{{ t.name | jsonify }},"description":{{ t.description | jsonify }},"applicationCategory":"MultimediaApplication","operatingSystem":"Windows, macOS, Linux ({{ dcc.full }})","image":"{{ site.url }}/assets/img/tools/{{ page.slug }}-cover.webp","url":"{{ site.url }}/tools/{{ page.slug }}/","publisher":{"@type":"Organization","name":"LP Tools","url":"{{ site.url }}/"}}
+</script>
+{% if t.faq %}<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for item in t.faq %}{"@type":"Question","name":{{ item.q | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ item.a | jsonify }}}}{% unless forloop.last %},{% endunless %}{% endfor %}]}
+</script>{% endif %}
