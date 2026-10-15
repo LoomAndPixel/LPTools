@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+{% include head.html %}
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/">LP Tools</a>
+  <nav><a href="/tools/">Tools</a>{% for d in site.data.dccs %}<a href="/{{ d[0] }}/">{{ d[1].name }}</a>{% endfor %}<a class="btn small" href="{{ site.store_url }}">Store</a></nav>
+</div></header>
+<main class="wrap">
+{{ content }}
+</main>
+<footer class="wrap"><p>Support: <a href="mailto:{{ site.support_email }}">{{ site.support_email }}</a></p><p>&copy; {{ site.time | date: '%Y' }} Loom &amp; Pixel. All rights reserved.</p></footer>
+</body>
+</html>

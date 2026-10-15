@@ -1,0 +1,155 @@
+{
+ "GLBBridgeForMaya": {
+  "name": "GLB Bridge for Maya | Import and Export glTF / GLB",
+  "custom_permalink": "GLBBridgeForMaya",
+  "short_url": "https://lptools.gumroad.com/l/GLBBridgeForMaya",
+  "tags": [
+   "game assets",
+   "maya",
+   "pbr materials",
+   "maya script",
+   "gltf",
+   "maya python",
+   "glb",
+   "gltf importer",
+   "glb exporter",
+   "3d interchange"
+  ]
+ },
+ "KeyForgeLiteForMaya": {
+  "name": "KeyForge Lite for Maya | Free Tween Machine Animation Bar",
+  "custom_permalink": "KeyForgeLiteForMaya",
+  "short_url": "https://lptools.gumroad.com/l/KeyForgeLiteForMaya",
+  "tags": [
+   "animation",
+   "workflow",
+   "maya",
+   "python script",
+   "maya script",
+   "keyframe",
+   "tweener",
+   "animation tools",
+   "tween machine",
+   "free maya script"
+  ]
+ },
+ "MixamoAutoControlRigForMaya": {
+  "name": "Mixamo Auto Control Rig for Maya | Updated for Maya 2024-2027",
+  "custom_permalink": "MixamoAutoControlRigForMaya",
+  "short_url": "https://lptools.gumroad.com/l/MixamoAutoControlRigForMaya",
+  "tags": [
+   "animation",
+   "maya",
+   "rigging",
+   "maya script",
+   "mixamo",
+   "maya python",
+   "autorig",
+   "control rig",
+   "mixamo rig",
+   "fk ik"
+  ]
+ },
+ "RollAnythingForMaya": {
+  "name": "Roll Anything for Maya | Roll Any Shape, No Slipping",
+  "custom_permalink": "RollAnythingForMaya",
+  "short_url": "https://lptools.gumroad.com/l/RollAnythingForMaya",
+  "tags": [
+   "physics",
+   "maya",
+   "rigging",
+   "rolling",
+   "dice",
+   "maya script",
+   "maya python",
+   "procedural animation",
+   "maya animation",
+   "animation tools"
+  ]
+ },
+ "KeyForgeForMaya": {
+  "name": "KeyForge for Maya | Animation Toolkit",
+  "custom_permalink": "KeyForgeForMaya",
+  "short_url": "https://lptools.gumroad.com/l/KeyForgeForMaya",
+  "tags": [
+   "animation",
+   "workflow",
+   "maya",
+   "python script",
+   "maya script",
+   "keyframes",
+   "graph editor",
+   "tweener",
+   "animation tools",
+   "blend sliders"
+  ]
+ },
+ "ModifierStackForMaya": {
+  "name": "Modifier Stack for Maya | 3ds Max Style Modify Panel",
+  "custom_permalink": "ModifierStackForMaya",
+  "short_url": "https://lptools.gumroad.com/l/ModifierStackForMaya",
+  "tags": [
+   "modeling",
+   "workflow",
+   "maya",
+   "3ds max",
+   "python script",
+   "maya script",
+   "deformers",
+   "modifier stack",
+   "modify panel",
+   "construction history"
+  ]
+ },
+ "MaterialGeneratorForMaya": {
+  "name": "Material Generator & Converter for Maya | Arnold, Redshift, V-Ray",
+  "custom_permalink": "MaterialGeneratorForMaya",
+  "short_url": "https://lptools.gumroad.com/l/MaterialGeneratorForMaya",
+  "tags": [
+   "maya",
+   "texturing",
+   "vray",
+   "material",
+   "pbr",
+   "arnold",
+   "shader",
+   "python script",
+   "redshift",
+   "look development"
+  ]
+ },
+ "fspyCameraMaya": {
+  "name": "fSpy Importer for Maya | Photo Camera Match",
+  "custom_permalink": "fspyCameraMaya",
+  "short_url": "https://lptools.gumroad.com/l/fspyCameraMaya",
+  "tags": [
+   "vfx",
+   "maya",
+   "camera projection",
+   "maya script",
+   "image plane",
+   "fspy",
+   "camera matching",
+   "camera match",
+   "photo match",
+   "fspy importer"
+  ]
+ },
+ "CameraToolkitForMaya": {
+  "name": "Camera Toolkit for Maya | Bake, Focus, Shake, Frustum",
+  "custom_permalink": "CameraToolkitForMaya",
+  "short_url": "https://lptools.gumroad.com/l/CameraToolkitForMaya",
+  "tags": [
+   "maya",
+   "fbx",
+   "unreal engine",
+   "maya script",
+   "maya python",
+   "camera shake",
+   "depth of field",
+   "maya camera",
+   "camera tools",
+   "camera bake"
+  ]
+ }
+}
