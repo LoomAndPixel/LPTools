@@ -36,7 +36,7 @@ For Maya 2025, 2026 and 2027, tested with Redshift and Arnold. Install by draggi
 
 ## A note for V-Ray users
 
-V-Ray support is built from V-Ray's published attribute names and naming conventions, and has not been tested in a copy of V-Ray. If you use V-Ray, try it and tell us what works or breaks at Tools@LoomAndPixel.com.
+V-Ray support is built from V-Ray's published attribute names and naming conventions, and has not been tested in a copy of V-Ray. If you use V-Ray, try it and tell us what works or breaks at support@LPTools.store.
 
 ## Who it is for
 
