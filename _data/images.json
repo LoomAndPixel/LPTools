@@ -135,14 +135,6 @@
   730,
   400
  ],
- "fspy-importer-maya-ui.webp": [
-  496,
-  282
- ],
- "fspy-importer-maya-ui-desc.webp": [
-  730,
-  282
- ],
  "map-importer-buildings.webp": [
   1200,
   750
@@ -210,5 +202,13 @@
  "fspy-importer-3dsmax-viewport.webp": [
   1280,
   756
+ ],
+ "fspy-importer-ui.webp": [
+  496,
+  282
+ ],
+ "fspy-importer-ui-desc.webp": [
+  730,
+  282
  ]
 }

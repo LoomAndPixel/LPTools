@@ -3,7 +3,7 @@ layout: doc
 title: fSpy Importer for Maya and 3ds Max Documentation
 description: "Install the free fSpy Importer for Maya or 3ds Max, import an .fspy project, and get a matched camera with the photo behind it and a projection material."
 date: 2026-10-16
-tool: fspy-importer-maya
+tool: fspy-importer
 nosupport: true
 ---
 
@@ -37,7 +37,7 @@ To make a shelf button, select the lines and middle-mouse-drag them onto a shelf
 
 ## Import a project
 
-{% include figure.html slug="fspy-importer-maya" name="ui-desc" side="right" alt="fSpy Importer window in Maya" caption="Pick an .fspy project and import." %}
+{% include figure.html slug="fspy-importer" name="ui-desc" side="right" alt="fSpy Importer window in Maya" caption="Pick an .fspy project and import." %}
 
 Pick a `.fspy` file in the window and import it. The importer creates:
 

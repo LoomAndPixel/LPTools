@@ -1,6 +1,6 @@
 ---
 layout: tool
-slug: fspy-importer-maya
+slug: fspy-importer
 dcc: maya
 dcc_also: 3dsmax
 also_art: fspy-importer-3dsmax
@@ -31,7 +31,7 @@ fSpy matches a camera to a single photo from its perspective lines. This free im
 
 ## In Maya
 
-{% include figure.html slug="fspy-importer-maya" name="ui-desc" side="right" alt="fSpy Importer window in Maya" caption="Pick an .fspy project and import." %}
+{% include figure.html slug="fspy-importer" name="ui-desc" side="right" alt="fSpy Importer window in Maya" caption="Pick an .fspy project and import." %}
 
 - **A matched camera** with the position, rotation, focal length and field of view from the fSpy solve, including film offset for off-center principal points.
 - **An image plane** showing the reference photo, pushed behind your scene.
