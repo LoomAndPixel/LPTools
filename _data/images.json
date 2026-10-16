@@ -170,5 +170,33 @@
  "map-importer-sf-sea.webp": [
   1200,
   750
+ ],
+ "blend-bridge-materials.webp": [
+  900,
+  650
+ ],
+ "blend-bridge-wire.webp": [
+  900,
+  650
+ ],
+ "skin-weights-select.webp": [
+  1200,
+  675
+ ],
+ "skin-weights-flex.webp": [
+  1200,
+  675
+ ],
+ "skin-weights-slider.webp": [
+  1200,
+  675
+ ],
+ "skin-weights-mirror.webp": [
+  1200,
+  675
+ ],
+ "skin-weights-colors.webp": [
+  1200,
+  675
  ]
 }
