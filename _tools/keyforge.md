@@ -27,23 +27,15 @@ KeyForge puts 25 blend sliders and more than 170 animation tools on one compact 
 
 Select controls and drag a slider. The dot next to KeyForge shows what will change: the keys selected in the Graph Editor, the highlighted Time Slider range, or the current frame. While you drag, the slider shows what the end you are heading to means, plus the value, and one Ctrl+Z undoes the whole drag. If a tool can't run, the bar tells you why.
 
-## Sliders
-
-- **Blend to a pose:** Tween, Blend to Neighbors, Default, Frame (with a reference frame box), Mirror, Buffer, Mirror from Frame and Partial Undo.
-- **Shape:** Pull / Push, Scale From (average, default, frame or neighbor key), Smooth / Rough, Ease In / Out, Blend to Ease and Wave.
-- **Timing and cycles:** Gap Mender, Bridge to Neighbors, Blend to Cycle and Time Shift (with stagger).
-- **World space:** Tween, Neighbors, Frame, Cycle, Align, Copied Xform and Relationship, all keeping hands and feet where they belong.
-
-## Tools
+## What you get
 
 {% include figure.html slug="keyforge" name="graph-editor" alt="A KeyForge strip inside Maya's Graph Editor" caption="A KeyForge strip sits inside the Graph Editor, right under its own buttons." %}
 
-- **Keys and timing:** Smart Key, copy, cut and paste keys and key times, nudge, insert and remove inbetweens, share and snap key times, bake on ones to fours, and simplify.
-- **Tangents:** Smart, Clean, Smooth and Contact recipes, every Maya tangent type, blend toward any of them, cycle match and Euler filter.
-- **Key colors:** tint keys red, yellow or green, then jump to, play or delete keys by color, plus Auto Tint.
-- **Pose and mirror:** copy and paste pose, reset, mirror pose and animation (names like Arm_L, armL, leftArm, or pairs you save) and preferred default poses.
-- **World and rig:** copy and paste world transforms and relationships, align, Global Offset, space switching that keeps the world position, temp controls, and temp pivots you rotate controls around. These are keyed and the rig is never touched.
-- **Navigate and view:** previous and next key by color, play keys only, play on twos, time bookmarks, visibility modes, isolate, live motion trails with a tick per frame, and Graph Editor and Channel Box helpers.
+- **25 blend sliders:** tween and blend to neighbors, a default pose, a frame or a mirrored pose, shape and ease your curves, mend gaps and cycle, and move poses in world space.
+- **More than 170 tools:** smart keying, copy and paste keys, tangents and key colors, pose and mirror tools, world-space and rig helpers, and navigation and view tools.
+- **A Graph Editor strip,** so the same tools work while you look at curves.
+
+Every slider and tool is listed in the [KeyForge documentation](/docs/keyforge/).
 
 ## Pose Library and Selection Sets
 

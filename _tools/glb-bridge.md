@@ -20,26 +20,15 @@ GLB Bridge imports and exports `.glb` and `.gltf` files with meshes, materials a
 
 {% include figure.html slug="glb-bridge" name="ui-both" alt="GLB Bridge import and export panels in Maya" caption="Import and export panels." %}
 
-## Import
-
-- **Materials:** OpenPBR materials with base color, metalness, roughness, normal, emissive, opacity and ambient occlusion maps, texture transforms and wrap modes. Older spec-gloss files and the common KHR material extensions (clearcoat, sheen, transmission, volume, IOR, unlit) come in too. Textures are saved into the project's sourceimages folder.
-- **Skins and blend shapes:** joints, bind poses and weights become a Maya skinCluster, and morph targets become blend shapes with their names and default weights.
-- **Animation:** every clip, with rotations unwrapped and blend shape weights keyed. Several clips are laid out one after another on the timeline.
-- **Cameras, lights and instances:** perspective and orthographic cameras, point, spot and directional lights, and GPU-instanced meshes.
-- **Compressed files:** Draco and meshopt compressed meshes, quantized meshes, and KTX2 (Basis Universal) and WebP textures, converted so Maya can use them.
-- **Quads come back:** glTF only stores triangles, so exports record the original quads and n-gons and an import rebuilds them exactly. For files from other tools, an optional Guess Quads setting pairs flat, smooth triangles into quads.
-- **Clean meshes:** split vertices are welded back together with UVs, normals, skin weights and morph targets kept, and flat-shaded models stay flat.
-
-## Export
+## What it does
 
 {% include figure.html slug="glb-bridge" name="ui-export" side="right" alt="GLB Bridge export panel in Maya" caption="The export panel." %}
 
-- **Scene:** meshes (triangulated, one primitive per material), hierarchy, pivots and Maya's scene units, converted to glTF's meters and Y up.
-- **Materials:** Standard Surface, OpenPBR, Arnold, Redshift and the classic shaders. Separate roughness and metalness maps are packed into one image, and tangents are written for normal-mapped materials.
-- **Skins and blend shapes:** exported from the rest pose, with a limit on influences per vertex (a Web Viewers preset keeps it at 4), and morph target normals.
-- **Animation:** baked from the timeline, including IK, constraints and expressions. Imported clips can be exported back out as separate clips.
-- **Compression (optional):** Draco meshes, and WebP or KTX2 (Basis Universal) textures, each with a Balanced, Smallest or Highest Quality setting. A skinned character with textures went from 4.3 MB to 0.8 MB in our test.
-- **Validate Scene:** checks the scene before export. Every file the tool writes passes the Khronos glTF Validator with no errors.
+- **Import:** meshes, OpenPBR materials with their maps, skins, blend shapes, every animation clip, cameras, lights and instanced meshes. Draco, meshopt and KTX2 compressed files come in too, and quads and n-gons are rebuilt.
+- **Export:** your scene with textures, skins, blend shapes and baked animation, plus optional Draco, WebP and KTX2 compression. Every file passes the Khronos glTF Validator with no errors.
+- **File dialogs:** `.glb` and `.gltf` also show up in Maya's File > Import, Open and Export.
+
+Every option is listed in the [GLB Bridge documentation](/docs/glb-bridge/).
 
 ## Requirements
 

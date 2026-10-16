@@ -1,0 +1,10 @@
+---
+layout: default
+title: Documentation
+description: "Install steps, how-to guides and reference for LP Tools scripts and plugins."
+permalink: /docs/
+---
+<h1>Documentation</h1>
+<p class="lead">Install steps, a tour of each tool and answers to common problems.</p>
+<ul class="guide-list">{% assign ds = site.docs | sort: "title" %}{% for d in ds %}
+<li><a href="{{ d.url }}">{{ d.title }}</a><br><span class="meta">{{ d.description }}</span></li>{% endfor %}</ul>

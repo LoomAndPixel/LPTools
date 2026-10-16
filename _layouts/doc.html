@@ -1,0 +1,23 @@
+---
+layout: default
+---
+{%- assign rel = site.tools | where: "slug", page.tool | first -%}
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/docs/">Docs</a> / {{ rel.name | default: page.title }}</nav>
+<article class="tool doc">
+  <h1>{{ page.title }}</h1>
+  <p class="lead">{{ page.description }}</p>
+  <p class="meta">Updated {{ page.date | date: "%B %-d, %Y" }}{% if rel %} &middot; <a href="{{ rel.url }}">Product page</a>{% endif %}</p>
+  {{ content }}
+  {%- unless page.nosupport -%}
+  <p class="note">Need help? Email <a href="mailto:{{ site.support_email }}">{{ site.support_email_display }}</a> and include the details listed on the <a href="/support/">Support page</a>.</p>
+  {%- endunless %}
+</article>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"BreadcrumbList","itemListElement":[
+{"@type":"ListItem","position":1,"name":"Home","item":"{{ site.url }}/"},
+{"@type":"ListItem","position":2,"name":"Docs","item":"{{ site.url }}/docs/"},
+{"@type":"ListItem","position":3,"name":{{ page.title | jsonify }},"item":"{{ site.url }}{{ page.url }}"}]},
+{"@type":"TechArticle","headline":{{ page.title | jsonify }},"description":{{ page.description | jsonify }},"dateModified":"{{ page.date | date: '%Y-%m-%d' }}","mainEntityOfPage":"{{ site.url }}{{ page.url }}","author":{"@type":"Organization","name":"Loom & Pixel"},"publisher":{"@type":"Organization","name":"LP Tools"}}
+]}
+</script>
