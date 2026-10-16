@@ -26,12 +26,15 @@ Coming from Camera Bake? This is its replacement, and a free update if you alrea
 
 {% include figure.html slug="camera-toolkit" name="ui-desc" side="right" alt="Camera Toolkit window in Maya" caption="Everything lives in one dockable window." %}
 
-- **Bake and Export:** bake any rig (aim and parent constraints, motion paths, nested groups, custom pivots, shake) to a new camera at the top of the hierarchy, with animated lens values. Export FBX bakes and exports in one step, ready for Unreal, Unity, Blender, Nuke or Houdini.
-- **Lens:** one-click focal lengths from 12 to 300mm, film back presets (Full Frame, Super 35, ALEXA 35, Mini and Mini LF, V-RAPTOR, VENICE 2, IMAX, APS-C, Micro Four Thirds), gate, mask and safe frame toggles, overscan, and Camera from View.
-- **Frustum:** see exactly what a camera sees from any other view, as a see-through pyramid that follows the lens, film back, film fit and render resolution. It can end at the focus distance to show the focus plane, and it never renders.
-- **Focus:** a focus control in front of the camera that drives Maya's and Arnold's focus distance and Redshift's Bokeh. Pick Focus lets you click any surface in the viewport to focus there. Focus on Selection, optional keys on every pick, DOF on and off, and f-stop are included.
-- **Shake:** procedural shake in 2D (film offset, so the camera does not move) or 3D (turns the camera in its own space, with optional movement for parallax). Presets cover Subtle, Handheld, Walking, Running, Vehicle and Impact. It works on top of existing keys, constraints and aim rigs, and Bake Shake turns it into keys.
-- **Copy:** copy lens settings and, or, position from one camera to others, at the current frame or baked over the frame range.
+- **Bake and Export:** bake any camera rig to one clean camera, and export it to FBX in one step.
+- **Lens:** one-click focal lengths, film back presets from Full Frame to IMAX, gate and safe frame toggles.
+- **Frustum:** see exactly what a camera sees from any other view.
+- **Focus:** a focus control with Pick Focus, Focus on Selection and f-stop.
+- **Shake:** procedural 2D and 3D camera shake with presets, and Bake Shake.
+- **Copy:** copy lens settings and position from one camera to others.
+
+
+See the [Camera Toolkit documentation](/docs/camera-toolkit/) for every option.
 
 ## Good to know
 

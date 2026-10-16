@@ -7,7 +7,8 @@ layout: default
 <article class="tool">
   <h1>{{ t.title }}</h1>
   <p class="lead">{{ t.summary }}</p>
-  <p><a class="btn" href="{{ g.short_url }}">Get the tool</a></p>
+  {%- assign doc = site.docs | where: "tool", t.slug | first -%}
+  <p><a class="btn" href="{{ g.short_url }}">Get the tool</a>{% if doc %} <a href="{{ doc.url }}">Read the documentation</a>{% endif %}</p>
   <img class="cover" src="/assets/img/tools/{{ page.slug }}-cover.webp" width="1280" height="720" alt="{{ t.name }} in {{ dcc.name }}">
   <h2>What it does</h2>
   <ul>{% for f in t.features %}<li>{{ f }}</li>{% endfor %}</ul>

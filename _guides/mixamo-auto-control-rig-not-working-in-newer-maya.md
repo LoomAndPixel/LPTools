@@ -38,4 +38,4 @@ See [Mixamo Auto Control Rig for Maya](/tools/mixamo-auto-control-rig/) for the 
 
 ## If you are on Maya 2022 or 2023
 
-The update has been tested in Maya 2024, 2025 and 2027. We have not tested it in 2022 or 2023, so we can't promise it works there. If you try it, tell us what you find at support@LPTools.store.
+The update has been tested in Maya 2024, 2025 and 2027. We have not tested it in 2022 or 2023, so we can't promise it works there.
