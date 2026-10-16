@@ -8,6 +8,8 @@ tool: mixamo-auto-control-rig
 faq:
 - q: Why does Mixamo Auto Control Rig not work in newer Maya?
   a: "The original script was written for Python 2. Maya 2022 made Python 3 the default, so the old script stops loading with syntax and import errors."
+- q: Did Adobe drop Maya support for Mixamo?
+  a: "Adobe no longer maintains the Maya Auto Control Rig script and has not updated it for Python 3. Adobe has not made a clear public announcement, and the Mixamo website itself still works for downloading characters and animations as FBX."
 - q: Is there a Mixamo Auto Control Rig for Maya 2024, 2025 or 2027?
   a: "Yes. An unofficial Python 3 port of version 1.6.0 works in Maya 2024, 2025 and 2027. It is free and is not an official Adobe or Mixamo release."
 ---
@@ -16,7 +18,13 @@ If you try the old Mixamo Auto Control Rig script in a recent version of Maya an
 
 ## Why it stopped working
 
-Mixamo's Auto Control Rig was written for **Python 2**. Starting with Maya 2022, **Python 3 is the default**, and the old code uses Python 2 syntax and modules that no longer exist there. The result is syntax errors or import errors the moment you load it. Mixamo stopped updating the script years ago, so there was no official fix.
+Mixamo's Auto Control Rig was written for **Python 2**. Starting with Maya 2022, **Python 3 is the default**, and the old code uses Python 2 syntax and modules that no longer exist there. The result is syntax errors or import errors the moment you load it. The script was never updated, so there was no official fix.
+
+## Why there is no official fix
+
+Adobe, which owns Mixamo, has dropped support for the Maya script. It is not a bug waiting for a patch. Adobe stopped maintaining the Maya rigging tools after it retired Fuse in 2020, and the Auto Control Rig has not been updated since. Adobe has not published a clear announcement about this, so what we know comes from Adobe's own community threads, where users report the Maya script no longer being maintained, and from the fact that it never got a Python 3 update.
+
+The Mixamo website itself still works. You can still download characters and animations as FBX files. What is missing is the Maya side of it, which is the part this update brings back.
 
 ## The fix
 
