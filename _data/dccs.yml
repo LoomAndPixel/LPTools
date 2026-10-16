@@ -3,3 +3,7 @@ maya:
   name: Maya
   full: Autodesk Maya
   blurb: Animation, rigging, modeling and lookdev tools for Autodesk Maya.
+3dsmax:
+  name: 3ds Max
+  full: Autodesk 3ds Max
+  blurb: Camera matching and other tools for Autodesk 3ds Max.

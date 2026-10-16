@@ -14,7 +14,7 @@ This repository is the source of the LP Tools website: the tool pages, the docum
 - [GLB Bridge](https://lptools.store/tools/glb-bridge/): import and export glTF and GLB.
 - [Camera Toolkit](https://lptools.store/tools/camera-toolkit/): everyday camera helpers in one window.
 - [Material Generator](https://lptools.store/tools/material-generator/): build materials from a texture folder for Arnold, Redshift or V-Ray.
-- [fSpy Importer for Maya](https://lptools.store/tools/fspy-importer-maya/): photo camera match.
+- [fSpy Importer for Maya and 3ds Max](https://lptools.store/tools/fspy-importer-maya/): photo camera match.
 - [Mixamo Auto Control Rig](https://lptools.store/tools/mixamo-auto-control-rig/): a Python 3 update of the old script, free.
 
 ## Guides
