@@ -4,6 +4,9 @@ slug: modifier-stack
 dcc: maya
 gumroad: ModifierStackForMaya
 name: Modifier Stack for Maya
+maya_versions: "2025, 2026, 2027"
+maya_tested: "2025, 2027"
+compat_note: "Collapse To Here and Paste are the least tested parts."
 title: Maya Modifier Stack, a 3ds Max Style Modify Panel
 description: A modifier stack for Maya. Add, reorder and toggle non-destructive modifiers
   from a 3ds Max style Modify panel, without digging through the history.

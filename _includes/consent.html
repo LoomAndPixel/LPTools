@@ -1,0 +1,20 @@
+<div class="consent" id="consent" role="dialog" aria-label="Cookie choice" hidden>
+  <p>This site uses Google Analytics cookies to count visits. No ads, and nothing that identifies you. <a href="/privacy/">Privacy</a></p>
+  <div class="consent-btns"><button type="button" class="c-no" data-c="denied">Decline</button><button type="button" class="c-yes" data-c="granted">Accept</button></div>
+</div>
+<script>
+(function () {
+  var box = document.getElementById('consent');
+  function saved() { try { return localStorage.getItem('lp-consent'); } catch (e) { return null; } }
+  function show() { box.hidden = false; }
+  function choose(v) {
+    try { localStorage.setItem('lp-consent', v); } catch (e) {}
+    if (window.gtag) gtag('consent', 'update', {analytics_storage: v});
+    box.hidden = true;
+  }
+  if (!saved()) show();
+  box.addEventListener('click', function (e) { var c = e.target.getAttribute('data-c'); if (c) choose(c); });
+  var re = document.getElementById('cookie-settings');
+  if (re) re.addEventListener('click', function (e) { e.preventDefault(); show(); });
+})();
+</script>

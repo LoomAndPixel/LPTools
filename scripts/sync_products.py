@@ -70,6 +70,9 @@ def sync_images():
                 im = im.resize((width, round(im.height * width / im.width)), Image.LANCZOS)
             im.save(SITE / "assets" / "img" / "tools" / f"{slug}-{kind}.webp", "WEBP", quality=82)
             n += 1
+            if kind == "cover":  # 640 px copy for the tool tiles
+                im.resize((640, round(im.height * 640 / im.width)), Image.LANCZOS).save(
+                    SITE / "assets" / "img" / "tools" / f"{slug}-card.webp", "WEBP", quality=82)
         n += sync_extras(slug, folder, prefix, sizes)
     (SITE / "_data" / "images.json").write_text(json.dumps(sizes, indent=1), encoding="utf-8")
     return n

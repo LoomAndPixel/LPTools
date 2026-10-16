@@ -4,6 +4,9 @@ slug: material-generator
 dcc: maya
 gumroad: MaterialGeneratorForMaya
 name: Material Generator and Converter for Maya
+maya_versions: "2025, 2026, 2027"
+maya_tested: "2025, 2027"
+compat_note: "Tested with Arnold and Redshift. V-Ray support has not been tested in a copy of V-Ray."
 title: Maya Material Converter for Arnold, Redshift, V-Ray
 description: Generate and convert materials in Maya between Arnold, Redshift and V-Ray.
 summary: Build materials from textures and convert them between renderers.

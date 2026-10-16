@@ -4,6 +4,9 @@ slug: mixamo-auto-control-rig
 dcc: maya
 gumroad: MixamoAutoControlRigForMaya
 name: Mixamo Auto Control Rig for Maya
+maya_versions: "2024 to 2027"
+maya_tested: "2024, 2025, 2027"
+compat_note: "Needs a character autorigged by mixamo.com."
 title: Mixamo Auto Control Rig for Maya 2024-2027
 description: Mixamo Auto Control Rig for Maya, updated for Maya 2024 to 2027. Build
   an animator friendly control rig on a Mixamo character in a few clicks.

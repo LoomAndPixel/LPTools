@@ -4,6 +4,7 @@
 {%- assign canon = page.url | replace: 'index.html', '' | prepend: site.url -%}
 {%- assign img = site.share_image -%}
 {%- if t %}{% capture img %}/assets/img/tools/{{ page.slug }}-cover.webp{% endcapture %}{% endif -%}
+{%- if page.tool and page.layout != 'tool' %}{% capture img %}/assets/img/tools/{{ page.tool }}-cover.webp{% endcapture %}{% endif -%}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ page_title | strip }}{% if t or page.title %} | LP Tools{% endif %}</title>
@@ -22,12 +23,20 @@
 <meta name="theme-color" content="#3b5bdb">
 <link rel="stylesheet" href="/assets/css/site.css?v={{ site.time | date: '%s' }}">
 {% if jekyll.environment == "production" and site.ga_measurement_id %}
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga_measurement_id }}"></script>
+<!-- Google tag (gtag.js), loaded with analytics storage denied until the visitor accepts -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied'});
+  try { if (localStorage.getItem('lp-consent') === 'granted') gtag('consent', 'update', {analytics_storage: 'granted'}); } catch (e) {}
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga_measurement_id }}"></script>
+<script>
   gtag('js', new Date());
   gtag('config', '{{ site.ga_measurement_id }}');
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href*="gumroad.com"]');
+    if (a) gtag('event', 'buy_click', {page_path: location.pathname, link_url: a.href});
+  });
 </script>
 {% endif %}

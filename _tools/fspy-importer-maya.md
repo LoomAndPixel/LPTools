@@ -4,6 +4,8 @@ slug: fspy-importer-maya
 dcc: maya
 gumroad: fspyCameraMaya
 name: fSpy Importer for Maya
+maya_versions: "Maya with Python 3"
+maya_tested: "2025, 2027"
 title: fSpy Importer for Maya, Photo Camera Match
 description: Import an fSpy project into Maya as a matched camera and image plane
   for photo camera matching.
