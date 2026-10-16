@@ -7,6 +7,7 @@ store_url: "https://lptools.gumroad.com"
 support_email: "support@lptools.store"
 support_email_display: "support@LPTools.store"
 share_image: /assets/img/og-image.png
+ga_measurement_id: "G-YKM6VC039S"
 
 exclude:
   - scripts
