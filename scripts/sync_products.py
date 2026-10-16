@@ -58,7 +58,11 @@ def sync_extras(slug, folder, prefix, sizes):
 
 def sync_images():
     n = 0
-    sizes = {}
+    # keep sizes for images the sync does not generate (guide renders added by hand)
+    try:
+        sizes = json.loads((SITE / "_data" / "images.json").read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        sizes = {}
     for slug, (folder, prefix) in ART.items():
         for kind, width in SIZES.items():
             src = folder / f"{prefix}_{kind}.png"

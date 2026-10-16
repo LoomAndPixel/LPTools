@@ -1,6 +1,6 @@
 {
  "GLBBridgeForMaya": {
-  "name": "GLB Bridge for Maya | Import and Export glTF / GLB",
+  "name": "Maya GLB and glTF Import and Export | GLB Bridge",
   "custom_permalink": "GLBBridgeForMaya",
   "short_url": "https://lptools.gumroad.com/l/GLBBridgeForMaya",
   "tags": [
@@ -17,7 +17,7 @@
   ]
  },
  "KeyForgeLiteForMaya": {
-  "name": "KeyForge Lite for Maya | Free Tween Machine Animation Bar",
+  "name": "Free Maya Tween Machine | KeyForge Lite Animation Bar",
   "custom_permalink": "KeyForgeLiteForMaya",
   "short_url": "https://lptools.gumroad.com/l/KeyForgeLiteForMaya",
   "tags": [
@@ -68,7 +68,7 @@
   ]
  },
  "KeyForgeForMaya": {
-  "name": "KeyForge for Maya | Animation Toolkit",
+  "name": "Maya Animation Toolkit | KeyForge",
   "custom_permalink": "KeyForgeForMaya",
   "short_url": "https://lptools.gumroad.com/l/KeyForgeForMaya",
   "tags": [
@@ -85,7 +85,7 @@
   ]
  },
  "ModifierStackForMaya": {
-  "name": "Modifier Stack for Maya | 3ds Max Style Modify Panel",
+  "name": "Maya Modifier Stack | 3ds Max Style Modify Panel",
   "custom_permalink": "ModifierStackForMaya",
   "short_url": "https://lptools.gumroad.com/l/ModifierStackForMaya",
   "tags": [
@@ -102,7 +102,7 @@
   ]
  },
  "MaterialGeneratorForMaya": {
-  "name": "Material Generator & Converter for Maya | Arnold, Redshift, V-Ray",
+  "name": "Maya Material Converter | Arnold, Redshift, V-Ray",
   "custom_permalink": "MaterialGeneratorForMaya",
   "short_url": "https://lptools.gumroad.com/l/MaterialGeneratorForMaya",
   "tags": [
@@ -136,7 +136,7 @@
   ]
  },
  "CameraToolkitForMaya": {
-  "name": "Camera Toolkit for Maya | Bake, Focus, Shake, Frustum",
+  "name": "Maya Camera Toolkit | Bake, Focus, Shake, Frustum",
   "custom_permalink": "CameraToolkitForMaya",
   "short_url": "https://lptools.gumroad.com/l/CameraToolkitForMaya",
   "tags": [
