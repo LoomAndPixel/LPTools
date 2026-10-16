@@ -17,6 +17,7 @@ layout: default
   {% if t.faq %}<h2>FAQ</h2>{% for item in t.faq %}<h3>{{ item.q }}</h3><p>{{ item.a }}</p>{% endfor %}{% endif %}
   <p><a class="btn" href="{{ g.short_url }}">Get the tool</a></p>
 </article>
+{% include more_tools.html slug=t.slug %}
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"SoftwareApplication","name":{{ t.name | jsonify }},"description":{{ t.description | jsonify }},"applicationCategory":"MultimediaApplication","operatingSystem":"Windows, macOS, Linux ({{ dcc.full }})","image":"{{ site.url }}/assets/img/tools/{{ page.slug }}-cover.webp","url":"{{ site.url }}/tools/{{ page.slug }}/","publisher":{"@type":"Organization","name":"LP Tools","url":"{{ site.url }}/"}}
 </script>

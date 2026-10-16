@@ -1,0 +1,11 @@
+{%- assign all = site.tools | sort_natural: "name" -%}
+{%- assign idx = 0 -%}
+{%- for x in all %}{% if x.slug == include.slug %}{% assign idx = forloop.index0 %}{% endif %}{% endfor -%}
+{%- assign picked = 0 -%}
+<section class="more-tools">
+  <h2>More LP Tools</h2>
+  <div class="grid">
+  {%- for x in all offset: idx %}{% if x.slug != include.slug and picked < 3 %}{% include card.html slug=x.slug tool=x %}{% assign picked = picked | plus: 1 %}{% endif %}{% endfor -%}
+  {%- for x in all %}{% if x.slug != include.slug and picked < 3 %}{% include card.html slug=x.slug tool=x %}{% assign picked = picked | plus: 1 %}{% endif %}{% endfor -%}
+  </div>
+</section>

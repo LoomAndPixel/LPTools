@@ -4,6 +4,8 @@ slug: camera-toolkit
 dcc: maya
 gumroad: CameraToolkitForMaya
 name: Camera Toolkit for Maya
+maya_versions: "2025, 2026, 2027"
+maya_tested: "2025, 2027"
 title: Maya Camera Tools, Camera Toolkit
 description: 'Camera Toolkit for Maya: bake cameras, pull focus, add camera shake
   and show the frustum.'

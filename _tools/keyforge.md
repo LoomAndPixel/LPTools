@@ -4,6 +4,8 @@ slug: keyforge
 dcc: maya
 gumroad: KeyForgeForMaya
 name: KeyForge for Maya
+maya_versions: "2025, 2026, 2027"
+maya_tested: "2025, 2027"
 title: KeyForge, a Maya Animation Toolkit
 description: KeyForge is a Maya animation toolkit with a tween machine, pose library
   and fast keying tools for animators.

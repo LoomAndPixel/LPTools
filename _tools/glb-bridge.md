@@ -4,6 +4,8 @@ slug: glb-bridge
 dcc: maya
 gumroad: GLBBridgeForMaya
 name: GLB Bridge for Maya
+maya_versions: "2025, 2026, 2027"
+maya_tested: "2025, 2027"
 title: Maya GLB Import and Export, GLB Bridge
 description: Import and export glTF and GLB files in Maya with meshes, materials,
   skins, blend shapes, animation, cameras and lights.

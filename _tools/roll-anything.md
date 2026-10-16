@@ -4,6 +4,8 @@ slug: roll-anything
 dcc: maya
 gumroad: RollAnythingForMaya
 name: Roll Anything for Maya
+maya_versions: "2025, 2026, 2027"
+maya_tested: "2025, 2027"
 title: Roll Anything for Maya, Roll Any Shape
 description: Roll Anything makes any shape roll in Maya without slipping. Set up wheels,
   balls and odd shapes that travel along the ground.

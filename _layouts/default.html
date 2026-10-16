@@ -11,6 +11,7 @@
 <main class="wrap">
 {{ content }}
 </main>
-<footer><div class="wrap foot"><p>&copy; {{ site.time | date: '%Y' }} Loom &amp; Pixel. All rights reserved.</p><p class="foot-links"><a href="/support/">Support</a><a href="/terms/">Terms and License</a><a href="/privacy/">Privacy</a></p></div></footer>
+<footer><div class="wrap foot"><p>&copy; {{ site.time | date: '%Y' }} Loom &amp; Pixel. All rights reserved.</p><p class="foot-links"><a href="/support/">Support</a><a href="/compatibility/">Compatibility</a><a href="/terms/">Terms and License</a><a href="/privacy/">Privacy</a><a href="#" id="cookie-settings">Cookie choice</a></p></div></footer>
+{% include consent.html %}
 </body>
 </html>

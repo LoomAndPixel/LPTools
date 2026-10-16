@@ -20,7 +20,7 @@ nav a{position:relative;margin:0;padding:8px 12px;text-decoration:none;color:var
 nav a:not(.btn)::after{content:"";position:absolute;left:12px;right:12px;bottom:3px;height:3px;border-radius:2px;background:linear-gradient(90deg,#e5534b,#57c36a,#409ad9);transform:scaleX(0);transform-origin:left;transition:transform .2s}
 nav a:not(.btn):hover{background:var(--card)}
 nav a:not(.btn):hover::after{transform:scaleX(1)}
-nav a.btn.small{margin-left:8px;padding:8px 18px;color:#fff;background:linear-gradient(135deg,#e5534b,#409ad9);box-shadow:0 2px 10px rgba(64,154,217,.35);transition:transform .15s,box-shadow .15s}
+nav a.btn.small{margin-left:8px;padding:8px 18px;color:#fff;background:linear-gradient(135deg,#c9392f,#1f6fb2);box-shadow:0 2px 10px rgba(64,154,217,.35);transition:transform .15s,box-shadow .15s}
 nav a.btn.small:hover{transform:translateY(-1px);box-shadow:0 4px 16px rgba(64,154,217,.5)}
 h1{font-size:clamp(1.7rem,4vw,2.4rem);line-height:1.2;margin:32px 0 12px}
 h2{margin-top:32px}
@@ -54,7 +54,7 @@ footer{margin-top:64px;padding:28px 0 32px;color:var(--muted);font-size:.9rem;ba
 .hero{position:relative;margin:28px 0 8px;padding:56px 40px 64px;border-radius:16px;overflow:hidden;color:#ececf1;background:radial-gradient(900px 400px at 85% -10%,rgba(64,154,217,.35),transparent 60%),radial-gradient(700px 400px at 0% 110%,rgba(229,83,75,.25),transparent 60%),#121416}
 .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:8px;background:linear-gradient(90deg,#e5534b 0 33.33%,#57c36a 33.33% 66.66%,#409ad9 66.66% 100%)}
 .hero .eyebrow{margin:0;font-weight:700;letter-spacing:.2em;text-transform:uppercase;font-size:.85rem;color:#8ea2ff}
-.hero h1{margin:12px 0 16px;max-width:18ch;font-size:clamp(2.2rem,6vw,4.2rem);line-height:1.05;font-weight:800;letter-spacing:-.01em}
+.hero h1{margin:12px 0 16px;max-width:none;font-size:clamp(2.2rem,5.2vw,3.8rem);line-height:1.05;font-weight:800;letter-spacing:-.01em}
 .hero h1 em{font-style:normal;color:#57c36a}
 .hero .lead{max-width:56ch;color:#b4b4c0}
 .hero-cta{margin:24px 0 0;display:flex;flex-wrap:wrap;gap:12px}
@@ -91,7 +91,7 @@ footer{margin-top:64px;padding:28px 0 32px;color:var(--muted);font-size:.9rem;ba
 .dcc h2 a{display:inline-flex;align-items:center;gap:14px;color:var(--fg);text-decoration:none}
 .dcc h2 a::after{content:"View all \2192";font-size:.8rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:5px 12px;border-radius:999px;border:2px solid var(--line);color:var(--muted);transition:color .2s,border-color .2s,background .2s,transform .2s}
 .dcc h2 a:hover{color:var(--accent)}
-.dcc h2 a:hover::after{color:#fff;border-color:transparent;background:linear-gradient(135deg,#e5534b,#409ad9);transform:translateX(4px)}
+.dcc h2 a:hover::after{color:#fff;border-color:transparent;background:linear-gradient(135deg,#c9392f,#1f6fb2);transform:translateX(4px)}
 .dcc .lead{padding-left:18px;margin-top:0}
 @media (prefers-reduced-motion:reduce){.hero-cta .btn,.hero-cta .btn::after,.hero-cta .btn::before,.dcc h2 a::after{transition:none}}
 .foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px 32px}
@@ -111,7 +111,7 @@ main>h1+.lead,.tool>h1+.lead{padding-left:20px;max-width:70ch}
 .tool li::marker{color:var(--accent)}
 .cover{border-radius:16px;border:1px solid var(--line);box-shadow:0 18px 40px rgba(0,0,0,.22)}
 .note{border-left:5px solid;border-image:linear-gradient(180deg,#e5534b 0 33.33%,#57c36a 33.33% 66.66%,#409ad9 66.66% 100%) 1;border-radius:0 10px 10px 0}
-main .btn{position:relative;overflow:hidden;padding:11px 24px;border-radius:999px;background:linear-gradient(135deg,#5b73e6,#409ad9);color:#fff;letter-spacing:.02em;box-shadow:0 4px 16px rgba(64,154,217,.35);transition:transform .2s,box-shadow .2s}
+main .btn{position:relative;overflow:hidden;padding:11px 24px;border-radius:999px;background:linear-gradient(135deg,#3f56d6,#1f6fb2);color:#fff;letter-spacing:.02em;box-shadow:0 4px 16px rgba(64,154,217,.35);transition:transform .2s,box-shadow .2s}
 main .btn::after{content:"\2192";display:inline-block;margin-left:10px;transition:transform .2s}
 main .btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(64,154,217,.55)}
 main .btn:hover::after{transform:translateX(5px)}
@@ -136,3 +136,61 @@ nav.crumbs a:hover{background:none}
 main .btn.ghost{background:transparent;color:var(--fg);border:2px solid var(--line);padding:9px 22px;box-shadow:none;margin-left:10px}
 main .btn.ghost::before{display:none}
 main .btn.ghost:hover{border-color:var(--accent);color:var(--accent);box-shadow:0 0 0 4px rgba(59,91,219,.15)}
+.br-d{display:none}
+@media (min-width:700px){.br-d{display:inline}}
+
+/* cookie choice */
+.consent{position:fixed;left:16px;right:16px;bottom:16px;z-index:50;max-width:720px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 20px;padding:16px 20px;background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 40px rgba(0,0,0,.35);font-size:.92rem;overflow:hidden}
+.consent[hidden]{display:none}
+.consent::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:linear-gradient(180deg,#e5534b 0 33.33%,#57c36a 33.33% 66.66%,#409ad9 66.66% 100%)}
+.consent p{margin:0;flex:1 1 280px}
+.consent-btns{display:flex;gap:10px}
+.consent button{font:inherit;font-weight:700;padding:9px 20px;border-radius:999px;cursor:pointer;border:2px solid var(--line);background:transparent;color:var(--fg);transition:border-color .15s,background .15s}
+.consent button:hover,.consent button:focus-visible{border-color:var(--accent)}
+
+/* hero: tool covers fading in the background */
+.hero>*:not(.hero-bg){position:relative;z-index:1}
+.hero-bg{position:absolute;z-index:0;top:0;right:0;bottom:8px;width:64%;opacity:.8;pointer-events:none;-webkit-mask-image:linear-gradient(90deg,transparent 5%,#000 65%);mask-image:linear-gradient(90deg,transparent 5%,#000 65%)}
+.hero-bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:heroFade 24s infinite}
+.hero-bg img:nth-child(2){animation-delay:6s}
+.hero-bg img:nth-child(3){animation-delay:12s}
+.hero-bg img:nth-child(4){animation-delay:18s}
+@keyframes heroFade{0%{opacity:0}4%{opacity:1}25%{opacity:1}29%{opacity:0}100%{opacity:0}}
+@media (max-width:700px){.hero-bg{display:none}}
+@media (prefers-reduced-motion:reduce){.hero-bg img{animation:none}.hero-bg img:first-child{opacity:1}}
+
+/* hero ghost button keeps light text in light mode */
+.hero-cta .btn.ghost{color:#ececf1}
+/* phones: header wraps instead of clipping */
+@media (max-width:700px){
+.top .wrap{height:auto;min-height:72px;flex-wrap:wrap;padding-top:10px;padding-bottom:10px;row-gap:4px}
+nav{justify-content:flex-start;width:100%}
+nav a{padding:6px 10px}
+nav a:not(.btn)::after{left:10px;right:10px}
+nav a.btn.small{margin-left:auto}
+.brand .tile{width:46px;height:46px}
+.brand .tile svg.lp{width:26px;height:19px}
+.brand svg.tools{width:88px;height:19px}
+}
+.hero-cta .btn.ghost{margin-left:0}
+@media (max-width:700px){main .btn.ghost{margin-left:0;margin-top:10px}.hero-cta .btn.ghost{margin-top:0}}
+
+/* more tools row and compatibility table */
+.more-tools{margin-top:48px}
+.table-wrap{overflow-x:auto;margin:20px 0;border:1px solid var(--line);border-radius:14px}
+table.compat{width:100%;border-collapse:collapse;font-size:.95rem}
+table.compat th,table.compat td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+table.compat thead th{background:var(--card);font-weight:800;letter-spacing:.02em;white-space:nowrap}
+table.compat tbody tr:last-child td{border-bottom:0}
+table.compat tbody tr:hover{background:var(--card)}
+table.compat td:first-child{font-weight:700}
+table.compat td:first-child a{text-decoration:none}
+@media (max-width:700px){
+table.compat thead{display:none}
+table.compat,table.compat tbody,table.compat tr,table.compat td{display:block;width:100%}
+table.compat tr{padding:10px 0;border-bottom:1px solid var(--line)}
+table.compat td{border:0;padding:3px 16px}
+table.compat td::before{content:attr(data-label) ": ";color:var(--muted);font-weight:600}
+table.compat td:first-child::before{content:""}
+table.compat td:empty{display:none}
+}

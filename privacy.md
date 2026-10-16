@@ -14,6 +14,8 @@ LP Tools is made by Loom & Pixel, a small creative studio. This site is a catalo
 
 This site uses [Google Analytics](https://marketingplatform.google.com/about/analytics/) to count visits and see which pages and tools people look at. It sets cookies in your browser and sends Google details such as the pages you view, how you got here, your approximate location, your browser and device type, and clicks on outbound links such as the Gumroad buy button. We don't use it for advertising, we don't send it your name or email, and we don't try to identify individual visitors.
 
+The analytics cookies are off until you choose Accept in the cookie notice. If you choose Decline, no analytics cookies are set. You can change your choice at any time with "Cookie choice" in the footer.
+
 Google processes this data under [its privacy policy](https://policies.google.com/privacy). You can opt out with the [Google Analytics opt-out browser add-on](https://tools.google.com/dlpage/gaoptout), or by blocking cookies or scripts in your browser.
 
 The site is hosted on [GitHub Pages](https://pages.github.com/). Like any web host, GitHub may log technical details such as your IP address when your browser loads a page, under [its privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
