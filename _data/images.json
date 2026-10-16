@@ -142,5 +142,33 @@
  "fspy-importer-maya-ui-desc.webp": [
   730,
   282
+ ],
+ "map-importer-buildings.webp": [
+  1200,
+  750
+ ],
+ "map-importer-roofs.webp": [
+  1200,
+  750
+ ],
+ "map-importer-ground.webp": [
+  1200,
+  750
+ ],
+ "map-importer-bag.webp": [
+  1200,
+  750
+ ],
+ "map-importer-bag-base.webp": [
+  1200,
+  750
+ ],
+ "map-importer-nyc.webp": [
+  1200,
+  750
+ ],
+ "map-importer-sf-sea.webp": [
+  1200,
+  750
  ]
 }
