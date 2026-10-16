@@ -1,5 +1,5 @@
 {%- if page.layout == 'tool' %}{% assign t = page %}{% endif -%}
-{%- capture page_title -%}{% if t %}{{ t.title }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}: {{ site.tagline }}{% endif %}{%- endcapture -%}
+{%- capture page_title -%}{% if t %}{{ t.title }}{% elsif page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}: {{ site.tagline }}{% endif %}{%- endcapture -%}
 {%- assign page_desc = t.description | default: page.description | default: site.description -%}
 {%- assign canon = page.url | replace: 'index.html', '' | prepend: site.url -%}
 {%- assign img = site.share_image -%}

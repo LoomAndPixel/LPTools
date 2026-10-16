@@ -1,8 +1,9 @@
 ---
 layout: guide
 title: Skin Magic Not Working in Maya? Building a Python 3 Replacement
+seo_title: Skin Magic Alternative for Maya (Python 3)
 crumb: Skin Magic not working in Maya
-description: "Skin Magic no longer works in current Maya because of Python 3. Here is how I am rebuilding a skin weights tool from scratch for Maya 2025 and newer, with renders from development."
+description: "Skin Magic no longer works in current Maya because of Python 3. How I am rebuilding a skin weights tool from scratch for Maya 2025 and newer."
 date: 2026-10-15
 faq:
 - q: Why does Skin Magic not work in new versions of Maya?

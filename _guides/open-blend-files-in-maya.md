@@ -1,8 +1,9 @@
 ---
 layout: guide
 title: How to Open .blend Files in Maya (Work in Progress)
+seo_title: Open .blend Files in Maya (In Development)
 crumb: Open .blend files in Maya
-description: "Maya cannot open .blend files. Here is how I am building a Blend Bridge that brings Blender scenes, materials, lights and animation into Maya, and why a clean conversion is hard."
+description: "Maya cannot open .blend files. How I am building Blend Bridge to bring Blender scenes, materials, lights and animation into Maya."
 date: 2026-10-15
 tool: glb-bridge
 faq:
