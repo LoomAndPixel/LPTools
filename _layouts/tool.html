@@ -3,12 +3,13 @@ layout: default
 ---
 {%- assign t = page -%}
 {%- assign g = site.data.gumroad[t.gumroad] -%}
+{%- capture buy -%}{% if t.buy %}{% for b in t.buy %}{% assign bg = site.data.gumroad[b.key] %}<a class="btn" href="{{ bg.short_url }}">{{ b.label }}</a> {% endfor %}{% else %}<a class="btn" href="{{ g.short_url }}">Get the tool</a>{% endif %}{%- endcapture -%}
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> {%- assign dcc = site.data.dccs[t.dcc] %} / <a href="/{{ t.dcc }}/">{{ dcc.name }}</a> / {{ t.name }}</nav>
 <article class="tool">
   <h1>{{ t.title }}</h1>
   <p class="lead">{{ t.summary }}</p>
   {%- assign doc = site.docs | where: "tool", t.slug | first -%}
-  <p><a class="btn" href="{{ g.short_url }}">Get the tool</a>{% if doc %} <a class="btn ghost" href="{{ doc.url }}">Read the documentation</a>{% endif %}</p>
+  <p>{{ buy }}{% if doc %} <a class="btn ghost" href="{{ doc.url }}">Read the documentation</a>{% endif %}</p>
   <img class="cover" src="/assets/img/tools/{{ page.slug }}-cover.webp" width="1280" height="720" alt="{{ t.name }} in {{ dcc.name }}">
   <h2>What it does</h2>
   <ul>{% for f in t.features %}<li>{{ f }}</li>{% endfor %}</ul>
@@ -17,7 +18,7 @@ layout: default
   {% if t.faq %}<h2>FAQ</h2>{% for item in t.faq %}<h3>{{ item.q }}</h3><p>{{ item.a }}</p>{% endfor %}{% endif %}
   {%- assign tool_guides = site.guides | where: "tool", t.slug -%}
   {% if tool_guides.size > 0 %}<h2>Guides</h2><ul>{% for g in tool_guides %}<li><a href="{{ g.url }}">{{ g.title }}</a></li>{% endfor %}</ul>{% endif %}
-  <p><a class="btn" href="{{ g.short_url }}">Get the tool</a></p>
+  <p>{{ buy }}</p>
 </article>
 {% include more_tools.html slug=t.slug %}
 <script type="application/ld+json">

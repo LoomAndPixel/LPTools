@@ -1,10 +1,11 @@
 {%- for d in site.data.dccs -%}
 {%- assign items = site.tools | where: 'dcc', d[0] -%}
-{%- if items.size > 0 -%}
+{%- assign also = site.tools | where: 'dcc_also', d[0] -%}
+{%- if items.size > 0 or also.size > 0 -%}
 <section class="dcc" id="{{ d[0] }}">
   <h2><a href="/{{ d[0] }}/">{{ d[1].name }} tools</a></h2>
   <p class="lead">{{ d[1].blurb }}</p>
-  <div class="grid">{% for t in items %}{% include card.html slug=t.slug tool=t %}{% endfor %}</div>
+  <div class="grid">{% for t in items %}{% include card.html slug=t.slug tool=t %}{% endfor %}{% for t in also %}{% include card.html slug=t.slug tool=t art=t.also_art %}{% endfor %}</div>
 </section>
 {%- endif -%}
 {%- endfor -%}

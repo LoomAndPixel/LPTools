@@ -1,0 +1,10 @@
+---
+layout: default
+title: 3ds Max Tools and Scripts
+description: "3ds Max scripts by LP Tools: import an fSpy camera match as a Physical Camera with the photo as viewport background."
+permalink: /3dsmax/
+---
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / 3ds Max</nav>
+<h1>3ds Max tools and scripts</h1>
+<p class="lead">{{ site.data.dccs["3dsmax"].blurb }}</p>
+<div class="grid">{% assign items = site.tools | where: "dcc", "3dsmax" %}{% for t in items %}{% include card.html slug=t.slug tool=t %}{% endfor %}{% assign also = site.tools | where: "dcc_also", "3dsmax" %}{% for t in also %}{% include card.html slug=t.slug tool=t art=t.also_art %}{% endfor %}</div>

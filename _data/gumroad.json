@@ -1,4 +1,21 @@
 {
+ "fspyCameraMax": {
+  "name": "fSpy Importer for 3ds Max | Photo Camera Match",
+  "custom_permalink": "fspyCameraMax",
+  "short_url": "https://lptools.gumroad.com/l/fspyCameraMax",
+  "tags": [
+   "vfx",
+   "3ds max",
+   "camera projection",
+   "3ds max script",
+   "fspy",
+   "camera matching",
+   "camera match",
+   "photo match",
+   "fspy importer",
+   "physical camera"
+  ]
+ },
  "GLBBridgeForMaya": {
   "name": "Maya GLB and glTF Import and Export | GLB Bridge",
   "custom_permalink": "GLBBridgeForMaya",
