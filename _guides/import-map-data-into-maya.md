@@ -1,8 +1,9 @@
 ---
 layout: guide
 title: How to Import Map Data into Maya (Work in Progress)
+seo_title: Import Map Data into Maya (In Development)
 crumb: Import map data into Maya
-description: "Maya has no built-in way to import real-world map data. Here is how I am building one: OpenStreetMap buildings, terrain, roads and roofs in Maya, with renders from the development."
+description: "Maya has no built-in way to import real-world map data. How I am building one: OpenStreetMap buildings, terrain, roads and roofs, with renders."
 date: 2026-10-15
 tool: glb-bridge
 faq:

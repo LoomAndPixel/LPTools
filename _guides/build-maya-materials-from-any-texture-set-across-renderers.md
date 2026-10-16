@@ -1,8 +1,9 @@
 ---
 layout: guide
 title: Build Maya Materials From Any Texture Set, Across Arnold, Redshift and V-Ray
+seo_title: Build Maya Materials from Any Texture Set
 crumb: Maya materials from any texture set
-description: "Build complete Maya materials from any PBR texture folder and move them between Arnold, Redshift and V-Ray. How it works, and how to request another renderer."
+description: "Build complete Maya materials from any PBR texture folder and move them between Arnold, Redshift and V-Ray. How it works, and how to request more."
 date: 2026-10-15
 tool: material-generator
 faq:

@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Mixamo Auto Control Rig Not Working in Maya 2022 and Later
+seo_title: Mixamo Auto Control Rig Not Working in Maya
 crumb: Mixamo Auto Control Rig not working in newer Maya
 description: "Why the old Mixamo Auto Control Rig script fails in newer versions of Maya, and a free Python 3 update that works in Maya 2024, 2025 and 2027."
 date: 2026-10-15

@@ -196,3 +196,5 @@ table.compat td::before{content:attr(data-label) ": ";color:var(--muted);font-we
 table.compat td:first-child::before{content:""}
 table.compat td:empty{display:none}
 }
+.more-guides{margin-top:36px}
+.more-guides ul,.tool ul+ul{padding-left:1.2em}

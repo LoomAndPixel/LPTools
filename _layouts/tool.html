@@ -15,6 +15,8 @@ layout: default
   {{ content }}
   {% if t.note %}<p class="note">{{ t.note }}</p>{% endif %}
   {% if t.faq %}<h2>FAQ</h2>{% for item in t.faq %}<h3>{{ item.q }}</h3><p>{{ item.a }}</p>{% endfor %}{% endif %}
+  {%- assign tool_guides = site.guides | where: "tool", t.slug -%}
+  {% if tool_guides.size > 0 %}<h2>Guides</h2><ul>{% for g in tool_guides %}<li><a href="{{ g.url }}">{{ g.title }}</a></li>{% endfor %}</ul>{% endif %}
   <p><a class="btn" href="{{ g.short_url }}">Get the tool</a></p>
 </article>
 {% include more_tools.html slug=t.slug %}

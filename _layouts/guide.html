@@ -9,6 +9,8 @@ layout: default
   <p class="meta">Updated {{ page.date | date: "%B %-d, %Y" }}</p>
   {{ content }}
   {% if rel %}<p class="note">Related tool: <a href="{{ rel.url }}">{{ rel.name }}</a>. {{ rel.summary }}</p>{% endif %}
+  {%- assign others = site.guides | sort: "date" | reverse -%}
+  <section class="more-guides"><h2>More guides</h2><ul>{% for g in others %}{% if g.url != page.url %}<li><a href="{{ g.url }}">{{ g.title }}</a></li>{% endif %}{% endfor %}</ul></section>
 </article>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
