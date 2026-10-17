@@ -18,7 +18,7 @@ features:
 
 ## Every camera tool in one dockable window
 
-Camera Toolkit brings lens and film back presets, a frustum visualizer, focus rigs, procedural camera shake, and baking any camera rig down to one clean camera, all in one place in Maya.
+Before anything gets lit or rendered, the camera has to be right. Camera Toolkit brings lens and film back presets, a frustum visualizer, focus rigs, procedural camera shake, and baking any camera rig down to one clean camera, all in one place in Maya.
 
 {% include figure.html slug="camera-toolkit" name="viewport" alt="A camera frustum and focus plane shown in the Maya viewport" caption="The frustum visualizer shows what a camera sees from any other view." %}
 

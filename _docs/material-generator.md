@@ -63,4 +63,4 @@ On first launch the tool writes `lp_material_generator_config.txt` to `Documents
 
 ## V-Ray
 
-V-Ray support is built from V-Ray's published attribute names and naming conventions. If you use V-Ray, try it and tell us what works or breaks.
+V-Ray support is built from V-Ray's published attribute names and naming conventions. If you use V-Ray, try it and tell me what works or breaks.

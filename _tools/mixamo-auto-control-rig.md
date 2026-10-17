@@ -25,7 +25,7 @@ faq:
 
 ## A Mixamo control rig that works in current Maya
 
-Mixamo's original Auto Control Rig tool stopped being updated years ago and no longer runs in modern Maya. This is the original v1.6.0 ported to Python 3 and tested in Maya 2024, 2025 and 2027, so the community has a compatible version. It builds a control rig on a character autorigged by Mixamo, so you can edit Mixamo motions or keyframe your own animation.
+Mixamo's original Auto Control Rig tool stopped being updated years ago and no longer runs in modern Maya. Mixamo is how a lot of characters get moving fast, and when the Maya script stopped working I wanted it back. This is the original v1.6.0 ported to Python 3 and tested in Maya 2024, 2025 and 2027, so the community has a compatible version. It builds a control rig on a character autorigged by Mixamo, so you can edit Mixamo motions or keyframe your own animation.
 
 {% include figure.html slug="mixamo-auto-control-rig" name="window-desc" side="right" alt="Mixamo Auto Control Rig window in Maya" caption="The Mixamo Auto Control Rig window." %}
 

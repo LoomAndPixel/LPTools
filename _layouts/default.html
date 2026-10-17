@@ -6,12 +6,12 @@
 <body>
 <header class="top"><div class="wrap">
   <a class="brand" href="/" aria-label="LP Tools home"><span class="tile"><svg class="lp" viewBox="0 0 142 100" width="31" height="22" aria-hidden="true" focusable="false"><path d="M6 6V94H56"/><path d="M82 94V6H112A24 24 0 0 1 112 54H82"/></svg></span><svg class="tools" viewBox="0 0 468 100" width="104" height="22" aria-hidden="true" focusable="false"><path d="M0 6H72M36 6V94"/><circle cx="136" cy="50" r="44"/><circle cx="250" cy="50" r="44"/><path d="M320 6V94H370"/><path d="M446 6H418A22 22 0 0 0 418 50H440A22 22 0 0 1 440 94H402"/></svg></a>
-  <nav><a href="/tools/">Tools</a>{% for d in site.data.dccs %}<a href="/{{ d[0] }}/">{{ d[1].name }}</a>{% endfor %}<a href="/docs/">Docs</a><a href="/guides/">Guides</a><a class="btn small" href="{{ site.store_url }}">Store</a></nav>
+  <nav><a href="/tools/">Tools</a>{% for d in site.data.dccs %}<a href="/{{ d[0] }}/">{{ d[1].name }}</a>{% endfor %}<a href="/docs/">Docs</a><a href="/guides/">Guides</a><a href="/about/">About</a><a class="btn small" href="{{ site.store_url }}">Store</a></nav>
 </div></header>
 <main class="wrap">
 {{ content }}
 </main>
-<footer><div class="wrap foot"><p>&copy; {{ site.time | date: '%Y' }} Loom &amp; Pixel. All rights reserved.</p><p class="foot-links"><a href="/support/">Support</a><a href="/compatibility/">Compatibility</a><a href="/terms/">Terms and License</a><a href="/privacy/">Privacy</a><a href="#" id="cookie-settings">Cookie choice</a></p></div></footer>
+<footer><div class="wrap foot"><p>&copy; {{ site.time | date: '%Y' }} Loom &amp; Pixel. All rights reserved.</p><p class="foot-links"><a href="/about/">About</a><a href="/support/">Support</a><a href="/compatibility/">Compatibility</a><a href="/terms/">Terms and License</a><a href="/privacy/">Privacy</a><a href="#" id="cookie-settings">Cookie choice</a></p></div></footer>
 {% include consent.html %}
 </body>
 </html>

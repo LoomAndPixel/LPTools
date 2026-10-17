@@ -59,6 +59,8 @@ footer{margin-top:64px;padding:28px 0 32px;color:var(--muted);font-size:.9rem;ba
 .hero h1 em.c-r{color:#e5534b}
 .hero h1 em.c-b{color:#409ad9}
 .hero .lead{max-width:56ch;color:#b4b4c0}
+.hero .byline{position:relative;max-width:60ch;margin:14px 0 0;font-size:.95rem;color:#8d8d9a}
+.hero .byline a{color:#8ea2ff}
 .hero-cta{margin:24px 0 0;display:flex;flex-wrap:wrap;gap:12px}
 .hero .btn{background:#8ea2ff;color:#14141a}
 .btn.ghost{background:transparent;color:#ececf1;border:2px solid #ffffff55;padding:8px 18px}

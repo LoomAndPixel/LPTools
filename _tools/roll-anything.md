@@ -19,7 +19,7 @@ features:
 
 ## Roll any shape by animating one control
 
-Select a cube, a rock, an egg, a d20, a barrel or a whole group, click Create Rig, and key only where it goes. Roll Anything works out the rolling for you: no sliding, no sinking into the floor, and it re-solves by itself every time you edit the keys.
+Select a cube, a rock, an egg, a d20, a barrel or a whole group, click Create Rig, and key only where it goes. Hand-animating a rolling cube is a rite of passage. Doing it twice is a choice. Roll Anything works out the rolling for you: no sliding, no sinking into the floor, and it re-solves by itself every time you edit the keys.
 
 {% include figure.html slug="roll-anything" name="ui-desc" side="right" alt="Roll Anything window in Maya" caption="Select an object, click Create Rig, then key the control." %}
 

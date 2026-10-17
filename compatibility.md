@@ -6,7 +6,7 @@ permalink: /compatibility/
 ---
 <h1>Compatibility</h1>
 <p class="lead">Which app versions each tool supports, and where it has been tested.</p>
-<p>Maya 2026 runs the same Python as Maya 2025, so a tool tested in 2025 runs the same code in 2026. We test in Maya 2025 and 2027. The 3ds Max importer is tested in 3ds Max 2027.</p>
+<p>Maya 2026 runs the same Python as Maya 2025, so a tool tested in 2025 runs the same code in 2026. I test in Maya 2025 and 2027. The 3ds Max importer is tested in 3ds Max 2027.</p>
 <div class="table-wrap"><table class="compat">
 <thead><tr><th>Tool</th><th>App versions</th><th>Tested in</th><th>Notes</th></tr></thead>
 <tbody>{% assign ts = site.tools | sort_natural: "name" %}{% for t in ts %}

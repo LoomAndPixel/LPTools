@@ -6,7 +6,7 @@ permalink: /support/
 ---
 # Support
 
-Need help with a tool, found a bug, or want to ask something before you buy? Email **[{{ site.support_email_display }}](mailto:{{ site.support_email }})**.
+Need help with a tool, found a bug, or want to ask something before you buy? Email me at **[{{ site.support_email_display }}](mailto:{{ site.support_email }})**.
 
 ## What to include
 
@@ -15,13 +15,13 @@ A few details get you a useful answer much faster:
 - **The tool and its version.** The window title or the file name of your download shows it.
 - **The app and its version, and your operating system,** for example Maya 2025 on Windows 11.
 - **What you did and what happened.** Steps to reproduce it are best.
-- **The error text.** Copy any error message or log lines from the app (in Maya, the red lines in the Script Editor).
+- **The error text.** Copy any error message or log lines from the app (in Maya, the red lines in the Script Editor). Copy all of it: the line that explains everything is usually the one that looked unimportant.
 - **A screenshot or a short screen recording,** if it is easier to show.
 - **The email you bought with,** if the question is about a purchase.
 
 ## Supported software
 
-Each tool page lists the apps and versions it supports, and the tool's README has the install steps. Our current Maya tools are built for **Maya 2025, 2026 and 2027** and tested in 2025 and 2027 (Maya 2026 runs the same Python as 2025).
+Each tool page lists the apps and versions it supports, and the tool's README has the install steps. The current Maya tools are built for **Maya 2025, 2026 and 2027** and tested in 2025 and 2027 (Maya 2026 runs the same Python as 2025).
 
 ## Common questions
 

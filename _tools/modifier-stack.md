@@ -53,4 +53,4 @@ For Maya 2025, 2026 and 2027. Tested in Maya 2025 and 2027. Maya 2026 runs the s
 
 ## Good to know
 
-Modifier Stack is a bit experimental. Collapse To Here and Paste are the least tested parts, so try them on a duplicate first. Reordering can break modifiers that store component numbers, and Ctrl+Z undoes it. Feedback is welcome: tell us which modifiers and orders work, what breaks and what you would like it to do next at support@LPTools.store.
+Modifier Stack is a bit experimental. Collapse To Here and Paste are the least tested parts, so try them on a duplicate first. Reordering can break modifiers that store component numbers, and Ctrl+Z undoes it. Feedback is welcome: tell me which modifiers and orders work, what breaks and what you would like it to do next at [{{ site.support_email_display }}](mailto:{{ site.support_email }}).
