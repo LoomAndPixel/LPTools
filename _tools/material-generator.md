@@ -19,6 +19,8 @@ features:
 ## Build materials from a texture folder
 
 {% include figure.html slug="material-generator" name="ui-desc" side="right" alt="Material Generator window in Maya with a texture folder chosen and a Redshift Standard Material build log" caption="Pick a folder and a renderer. The log shows every map it connects." %}
+I've wired texture maps into materials by hand at 6 a.m. with a client review at 7. That isn't lookdev, it's data entry, so I automated it.
+
 Point Material Generator at a folder of textures and it scans the folder and its subfolders, groups the files into materials by name, and builds one complete material per set in Arnold, Redshift or V-Ray. Every map is connected to the right attribute, with the right color space and the right helper nodes. Run it again after adding more maps and it only fills in what is missing.
 
 - **Normal maps and displacement** are built the way each renderer expects: aiNormalMap for Arnold, RedshiftNormalMap with Bump Blender for Redshift, and tangent-space bump for V-Ray.
@@ -39,7 +41,7 @@ For Maya 2025, 2026 and 2027, tested with Redshift and Arnold. Install by draggi
 
 ## A note for V-Ray users
 
-V-Ray support is built from V-Ray's published attribute names and naming conventions, and has not been tested in a copy of V-Ray. If you use V-Ray, try it and tell us what works or breaks at support@LPTools.store.
+V-Ray support is built from V-Ray's published attribute names and naming conventions, and has not been tested in a copy of V-Ray. If you use V-Ray, try it and tell me what works or breaks at [{{ site.support_email_display }}](mailto:{{ site.support_email }}).
 
 ## Who it is for
 

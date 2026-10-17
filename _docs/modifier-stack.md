@@ -94,4 +94,4 @@ Bend, Twist, Flare, Squash, Sine, Wave, Lattice (2x2x2, 3x3x3, 4x4x4), Cluster, 
 
 **Collapse To Here or Paste gives odd results.** These are the least tested parts, so try them on a duplicate of your object first, and save before you use them.
 
-**Modifier Stack is a bit experimental.** Not every deformer has been tested in every order. If something breaks, email us what you did and which modifiers were in the stack.
+**Modifier Stack is a bit experimental.** Not every deformer has been tested in every order. If something breaks, email me what you did and which modifiers were in the stack.

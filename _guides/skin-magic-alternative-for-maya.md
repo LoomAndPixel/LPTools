@@ -1,33 +1,43 @@
 ---
 layout: guide
-title: Skin Magic Not Working in Maya? Building a Python 3 Replacement
-seo_title: Skin Magic Alternative for Maya (Python 3)
+title: Skin Magic Not Working in Maya 2025? Building a Replacement
+seo_title: Skin Magic Alternative for Maya 2025 and 2027
 crumb: Skin Magic not working in Maya
-description: "Skin Magic no longer works in current Maya because of Python 3. How I am rebuilding a skin weights tool from scratch for Maya 2025 and newer."
+description: "Skin Magic stops with \"No module named 'pymel'\" in Maya 2025 and newer. Why, and how I am rebuilding a skin weights tool from scratch."
 date: 2026-10-15
 faq:
 - q: Why does Skin Magic not work in new versions of Maya?
-  a: "Maya moved to Python 3 in 2022, and Skin Magic was written for the Python 2 era. Scripts written that way often fail on import or crash partway through in current Maya."
+  a: "Its last release was tested up to Maya 2023. In Maya 2025 and 2027 it stops on its first lines with \"ModuleNotFoundError: No module named 'pymel'\", because it is built on PyMEL, which newer versions of Maya no longer install by default."
 - q: Is there a Skin Magic alternative for Maya 2025 and 2027?
   a: "I am building one. It is a new tool written from scratch for Python 3, not a patched copy of the old one, and it is not released yet."
 - q: Is Skin Weights for Maya available?
   a: "Not yet. It is in development and not listed, and its name is provisional. This page follows its progress."
 ---
 
-If you rig characters in Maya, you probably know **Skin Magic**. It made editing skin weights quick: select some vertices, see every influence, change the numbers, move on. Then Maya moved to Python 3, and the tool stopped working.
+If you rig characters in Maya, you probably know **Skin Magic**. It made editing skin weights quick: select some vertices, see every influence, change the numbers, move on. Then newer versions of Maya came out, and it stopped opening.
 
 Skin Magic itself was based on the skinning tools in **3ds Max**, which use a similar approach: a list of influences for the selected vertices, with numbers you set directly. That workflow is a big part of why Max riggers like it, and why I wanted it back in Maya.
 
 I started to remake it. It is **not released yet**. This page is a look at what I learned, with frames from my development demo.
 
+## The error you'll see
+
+Skin Magic's last release had already moved to Python 3, and it was tested up to Maya 2023. In Maya 2025 and 2027 it stops on line 176, before its window ever opens:
+
+```
+ModuleNotFoundError: No module named 'pymel'
+```
+
+Skin Magic is built on PyMEL, a Python library that older versions of Maya installed for you. Newer versions make it an optional extra, so the very first import fails. I ran the original in both Maya 2025 and 2027 to confirm it.
+
 ## Why not just fix it?
 
-The obvious plan was to port the old script to Python 3. I looked at it and decided against it:
+The obvious plan was to install PyMEL and patch whatever broke next. I looked at it and decided against it:
 
-- It had **many Python 3 problems**, not one or two, and each fix exposed another.
+- It had **many problems in current Maya**, not one or two, and each fix exposed another.
 - It carried **no license**, so I could not build on its code.
 
-So I treated it as a feature list and nothing more. I wrote the new tool from scratch, using Maya's own modern API, and designed the parts around how rigging actually feels in Maya today.
+So I treated it as a feature list and nothing more. I wrote the new tool from scratch, using Maya's own modern API with no PyMEL, and designed the parts around how rigging actually feels in Maya today.
 
 ## What it does
 

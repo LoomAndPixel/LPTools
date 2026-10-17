@@ -24,7 +24,7 @@ This repository is the source of the LP Tools website: the tool pages, the docum
 - [Mixamo Auto Control Rig not working in newer Maya](https://lptools.store/guides/mixamo-auto-control-rig-not-working-in-newer-maya/)
 - [How to import map data into Maya (in development)](https://lptools.store/guides/import-map-data-into-maya/)
 - [How to open .blend files in Maya (in development)](https://lptools.store/guides/open-blend-files-in-maya/)
-- [Skin Magic not working in Maya? A Python 3 replacement (in development)](https://lptools.store/guides/skin-magic-alternative-for-maya/)
+- [Skin Magic not working in Maya 2025? A replacement (in development)](https://lptools.store/guides/skin-magic-alternative-for-maya/)
 
 ## Documentation
 

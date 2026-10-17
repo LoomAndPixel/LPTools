@@ -19,7 +19,7 @@ features:
 
 ## An animation toolkit by Maya's Time Slider
 
-KeyForge puts 25 blend sliders and more than 170 animation tools on one compact bar docked right under the timeline. Tween and blend poses, retime keys, mirror, bake, tint keys by type, work in world space and use temp controls, without digging through menus.
+I'm not an animator, but I've worked next to animators my whole career, and I've seen how much of their day goes to clicking through menus instead of animating. KeyForge puts 25 blend sliders and more than 170 animation tools on one compact bar docked right under the timeline. Tween and blend poses, retime keys, mirror, bake, tint keys by type, work in world space and use temp controls, without digging through menus.
 
 **Try it free first:** [KeyForge Lite](/tools/keyforge-lite/) gives you the Tween, Blend to Neighbors and Pull / Push sliders plus Smart Key, Reset Pose and Copy / Paste Pose, at no cost. If you like it, come back for the full KeyForge. Installing it removes KeyForge Lite for you.
 

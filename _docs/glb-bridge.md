@@ -67,7 +67,7 @@ The installer also adds `.glb` and `.gltf` to Maya's File > Import, Open and Exp
 - **Materials:** Standard Surface, OpenPBR, Arnold, Redshift and the classic shaders. Separate roughness and metalness maps are packed into one image, and tangents are written for normal-mapped materials.
 - **Skins and blend shapes:** exported from the rest pose, with a limit on influences per vertex (a Web Viewers preset keeps it at 4), and morph target normals.
 - **Animation:** baked from the timeline, including IK, constraints and expressions. Imported clips can be exported back out as separate clips.
-- **Compression (optional):** Draco meshes, and WebP or KTX2 (Basis Universal) textures, each with a Balanced, Smallest or Highest Quality setting. A skinned character with textures went from 4.3 MB to 0.8 MB in our test.
+- **Compression (optional):** Draco meshes, and WebP or KTX2 (Basis Universal) textures, each with a Balanced, Smallest or Highest Quality setting. A skinned character with textures went from 4.3 MB to 0.8 MB in my test.
 - **Validate Scene:** checks the scene before export. Every file the tool writes passes the Khronos glTF Validator with no errors.
 
 In the **Compression** section on the Export tab you can switch on Draco, WebP and KTX2.

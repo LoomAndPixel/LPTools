@@ -27,6 +27,8 @@ features:
 
 ## Import an fSpy camera match in one click
 
+A lot of my career has been matching CG to the real world, from LiDAR-scanning sets at night to lining up a camera with a single reference photo. fSpy is the quickest way I know to do the second one, and these importers bring it straight into your scene.
+
 fSpy matches a camera to a single photo from its perspective lines. This free importer turns the saved `.fspy` project into a ready-to-use camera, with the photo behind it and a projection material, so you can model, animate or composite against the photo right away. It works with any image size and aspect ratio. There is one download for Maya and one for 3ds Max.
 
 ## In Maya
