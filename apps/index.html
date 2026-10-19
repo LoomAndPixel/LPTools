@@ -1,0 +1,10 @@
+---
+layout: default
+title: Standalone Windows Apps
+description: "Standalone Windows apps by LP Tools: Repack packs, splits and converts PBR textures for Unreal, Unity, Godot and glTF."
+permalink: /apps/
+---
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / Standalone apps</nav>
+<h1>Standalone apps</h1>
+<p class="lead">{{ site.data.dccs["apps"].blurb }}</p>
+<div class="grid">{% assign items = site.tools | where: "dcc", "apps" %}{% for t in items %}{% include card.html slug=t.slug tool=t %}{% endfor %}</div>
