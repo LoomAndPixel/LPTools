@@ -8,7 +8,7 @@ tool: camera-toolkit
 
 ## Requirements
 
-Maya 2025, 2026 or 2027. Tested in Maya 2025 and 2027. Maya 2026 runs the same Python as 2025.
+Maya 2024, 2025, 2026 or 2027. Tested in Maya 2024, 2025 and 2027. Maya 2026 runs the same Python as 2025.
 
 ## Install
 
@@ -19,13 +19,13 @@ Pick one of the two ways.
 1. Unzip the whole download.
 2. Start Maya and drag `CameraToolkit_drag_and_drop_install.py` into a viewport.
 
-Camera Toolkit opens, its **CAM** button goes on the LP Tools shelf, and it gets an entry in the LP Tools menu. Click the button to open the window. One install covers Maya 2025, 2026 and 2027. In another version, the button appears the first time you start it.
+Camera Toolkit opens, its **CAM** button goes on the LP Tools shelf, and it gets an entry in the LP Tools menu. Click the button to open the window. One install covers Maya 2024, 2025, 2026 and 2027. In another version, the button appears the first time you start it.
 
 To remove it, choose LP Tools menu > Camera Toolkit > Uninstall.
 
 **B. By hand, with two lines of Python**
 
-1. Copy the whole `lp_camera_toolkit` folder from `CameraToolkit\python\py311` (Maya 2025 or 2026) or `CameraToolkit\python\py313` (Maya 2027) into your Maya scripts folder, `Documents\maya\scripts`.
+1. Copy the whole `lp_camera_toolkit` folder from `CameraToolkit\python\py310` (Maya 2024), `CameraToolkit\python\py311` (Maya 2025 or 2026) or `CameraToolkit\python\py313` (Maya 2027) into your Maya scripts folder, `Documents\maya\scripts`.
 2. Restart Maya, then run these lines in the Script Editor (Python tab):
 
 ```python
