@@ -1,0 +1,5 @@
+{
+  "version": "0.9.3",
+  "url": "https://lptools.gumroad.com/l/Repack",
+  "notes": "Installs into an LP Tools folder with a choice of all users, clearer update messages, and updated license text. Earlier in 0.9.2: unused files get their own Write nodes, a visible Metal to Specular node, DDS export, and a one-row 3D toolbar."
+}
