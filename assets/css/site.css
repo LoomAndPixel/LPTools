@@ -27,7 +27,7 @@ h2{margin-top:32px}
 .lead{font-size:1.15rem;color:var(--muted)}
 .btn{display:inline-block;background:var(--accent);color:var(--btn-fg);padding:10px 20px;border-radius:8px;text-decoration:none;font-weight:600}
 .btn.small{padding:4px 12px}
-.grid{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;margin:24px 0}
+.grid{display:flex;flex-wrap:wrap;justify-content:flex-start;gap:16px;margin:24px 0}
 .grid>.card{flex:0 0 100%}
 @media (min-width:560px){.grid>.card{flex-basis:calc((100% - 16px)/2)}}
 @media (min-width:760px){.grid>.card{flex-basis:calc((100% - 32px)/3)}}
