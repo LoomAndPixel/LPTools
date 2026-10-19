@@ -1,4 +1,8 @@
 # One entry per DCC app, in display order. Tool pages set `dcc: <key>` in front matter.
+apps:
+  name: Standalone
+  full: Windows desktop app
+  blurb: Stand-alone Windows apps for texture and asset work, no host software needed.
 maya:
   name: Maya
   full: Autodesk Maya
@@ -7,7 +11,3 @@ maya:
   name: 3ds Max
   full: Autodesk 3ds Max
   blurb: Camera matching and other tools for Autodesk 3ds Max.
-apps:
-  name: Standalone
-  full: Windows desktop app
-  blurb: Stand-alone Windows apps for texture and asset work, no host software needed.
