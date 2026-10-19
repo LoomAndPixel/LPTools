@@ -1,4 +1,10 @@
 {
+ "Repack": {
+  "name": "Repack: PBR texture packer",
+  "custom_permalink": "Repack",
+  "short_url": "https://lptools.gumroad.com/l/Repack",
+  "tags": []
+ },
  "fspyCameraMax": {
   "name": "fSpy Importer for 3ds Max | Photo Camera Match",
   "custom_permalink": "fspyCameraMax",
@@ -168,11 +174,5 @@
    "camera tools",
    "camera bake"
   ]
- },
- "Repack": {
-  "name": "Repack",
-  "custom_permalink": "Repack",
-  "short_url": "https://lptools.gumroad.com/l/Repack",
-  "tags": []
  }
 }

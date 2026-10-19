@@ -31,11 +31,11 @@ Select controls and drag a slider. The dot next to KeyForge shows what will chan
 
 ## What you get
 
-{% include figure.html slug="keyforge" name="graph-editor" alt="A KeyForge strip inside Maya's Graph Editor" caption="A KeyForge strip sits inside the Graph Editor, right under its own buttons." %}
+{% include figure.html slug="keyforge" name="graphbar-2row" alt="The KeyForge Graph Bar inside Maya's Graph Editor" caption="The KeyForge Graph Bar sits inside the Graph Editor, right under its own buttons." %}
 
 - **25 blend sliders:** tween and blend to neighbors, a default pose, a frame or a mirrored pose, shape and ease your curves, mend gaps and cycle, and move poses in world space.
 - **More than 170 tools:** smart keying, copy and paste keys, tangents and key colors, pose and mirror tools, world-space and rig helpers, and navigation and view tools.
-- **A Graph Editor strip,** so the same tools work while you look at curves.
+- **A Graph Bar inside the Graph Editor,** so the same tools work while you look at curves, with Translate, Rotate and Scale fields that color like the Channel Box.
 
 Every slider and tool is listed in the [KeyForge documentation](/docs/keyforge/).
 

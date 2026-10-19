@@ -57,11 +57,19 @@ If you have KeyForge Lite installed, installing KeyForge removes it for you.
 
 Right-click the bar and choose **Assign hotkeys**, then type "KeyForge" in the Hotkey Editor's search. Try the pop-up slider first. You can also make the S key run Smart Key.
 
-## The Graph Editor strip
+## The Graph Bar
 
-{% include figure.html slug="keyforge" name="graph-editor" alt="A KeyForge strip inside Maya's Graph Editor" caption="A KeyForge strip sits inside the Graph Editor, right under its own buttons." %}
+{% include figure.html slug="keyforge" name="graphbar-2row" alt="The KeyForge Graph Bar inside Maya's Graph Editor, in two rows" caption="The KeyForge Graph Bar sits inside the Graph Editor, right under its own buttons. Two rows: tools above, channels below." %}
 
-KeyForge adds a strip inside the Graph Editor so you can use the same tools while you look at curves. The dot next to "KeyForge" still shows what will change.
+The Graph Bar puts the same tools inside the Graph Editor, so you can use them while you look at curves. The button at the far left switches between one row and two. Click the **?** at the right end for a short guide.
+
+{% include figure.html slug="keyforge" name="graphbar-1row" alt="The KeyForge Graph Bar in one row, with the channel fields beside the tools" caption="One row: the channel fields sit right after the tools." %}
+
+**Channel fields.** Translate, Rotate and Scale of the object picked in the Graph Editor's list, like the Channel Box:
+
+- **Colors:** red means keyed on this frame, pink means animated but between keys, yellow means connected, grey means locked. A channel your rigger hid is left empty and can't be changed.
+- **Several at once:** click and drag across the small labels (Tx, Ty, Tz and so on) to select channels, and hold Ctrl to add more. Locked and hidden channels are skipped. Then type a value to set them all, or middle-drag a box to scrub them together (Ctrl for fine, Shift for coarse). One Ctrl+Z undoes a whole scrub.
+- **Right-click a channel** for Key, Remove key, Key Translate, Rotate or Scale, Lock and Unlock, Mute and Unmute, Break connections, Reset to default, and Copy and Paste value.
 
 ## Pose Library and Selection Sets
 
