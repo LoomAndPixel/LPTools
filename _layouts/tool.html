@@ -10,7 +10,7 @@ layout: default
   <p class="lead">{{ t.summary }}</p>
   {%- assign doc = site.docs | where: "tool", t.slug | first -%}
   <p>{{ buy }}{% if doc %} <a class="btn ghost" href="{{ doc.url }}">Read the documentation</a>{% endif %}</p>
-  <img class="cover" src="/assets/img/tools/{{ page.slug }}-cover.webp" width="1280" height="720" alt="{{ t.name }} in {{ dcc.name }}">
+  <img class="cover" src="/assets/img/tools/{{ page.slug }}-cover.webp" width="1280" height="720" alt="{% if t.dcc == 'apps' %}{{ t.name }}{% else %}{{ t.name }} in {{ dcc.name }}{% endif %}">
   <h2>What it does</h2>
   <ul>{% for f in t.features %}<li>{{ f }}</li>{% endfor %}</ul>
   {{ content }}
@@ -22,7 +22,7 @@ layout: default
 </article>
 {% include more_tools.html slug=t.slug %}
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"SoftwareApplication","name":{{ t.name | jsonify }},"description":{{ t.description | jsonify }},"applicationCategory":"MultimediaApplication","operatingSystem":"Windows, macOS, Linux ({{ dcc.full }})","image":"{{ site.url }}/assets/img/tools/{{ page.slug }}-cover.webp","url":"{{ site.url }}/tools/{{ page.slug }}/","publisher":{"@type":"Organization","name":"LP Tools","url":"{{ site.url }}/"}}
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":{{ t.name | jsonify }},"description":{{ t.description | jsonify }},"applicationCategory":"MultimediaApplication","operatingSystem":{% if t.os %}{{ t.os | jsonify }}{% else %}"Windows, macOS, Linux ({{ dcc.full }})"{% endif %},"image":"{{ site.url }}/assets/img/tools/{{ page.slug }}-cover.webp","url":"{{ site.url }}/tools/{{ page.slug }}/","publisher":{"@type":"Organization","name":"LP Tools","url":"{{ site.url }}/"}}
 </script>
 {% if t.faq %}<script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for item in t.faq %}{"@type":"Question","name":{{ item.q | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ item.a | jsonify }}}}{% unless forloop.last %},{% endunless %}{% endfor %}]}
