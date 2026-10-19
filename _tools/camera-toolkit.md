@@ -4,8 +4,8 @@ slug: camera-toolkit
 dcc: maya
 gumroad: CameraToolkitForMaya
 name: Camera Toolkit for Maya
-maya_versions: "2025, 2026, 2027"
-maya_tested: "2025, 2027"
+maya_versions: "2024, 2025, 2026, 2027"
+maya_tested: "2024, 2025, 2027"
 title: Maya Camera Tools, Camera Toolkit
 description: 'Camera Toolkit for Maya: bake cameras, pull focus, add camera shake
   and show the frustum.'
@@ -44,4 +44,4 @@ Every button works on the selected cameras, or the camera you are looking throug
 
 ## Requirements
 
-For Maya 2025, 2026 and 2027. Tested in Maya 2025 and 2027. Maya 2026 runs the same Python as 2025.
+For Maya 2024, 2025, 2026 and 2027. Tested in Maya 2024, 2025 and 2027. Maya 2026 runs the same Python as 2025.
