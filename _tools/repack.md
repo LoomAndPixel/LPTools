@@ -26,7 +26,7 @@ Drop in a folder of maps, pick a target, and Repack writes a correctly packed, n
 
 - **Reads your file names:** diff, nor_gl, rough, disp, ao, `_D` and `_N` style suffixes, ORM and Mask Map packs and more. A wrong guess is one dropdown away.
 - **Presets for Unreal, Unity (URP, Built-in, Specular), Godot and glTF,** plus separate maps with a GL or DX normal and a Convert only preset. Edit the channel matrix and save your own.
-- **Conversions:** DirectX to OpenGL normals, roughness to gloss, metal and roughness to specular and gloss, resize, bit depth with dithering, and PNG, TGA, JPG, TIFF or EXR output.
+- **Conversions:** DirectX to OpenGL normals, roughness to gloss, metal and roughness to specular and gloss, resize, bit depth with dithering, and PNG, TGA, JPG, TIFF, EXR or game-ready DDS output (BC7, BC5, BC4 and BC6H, with mipmaps). Reads PNG, JPG, TIFF, TGA, EXR, BMP, HDR and DDS.
 - **A node graph like Nuke's:** every file is a node with a pin per channel, wired into the outputs the preset writes. Drag a wire to change what goes where, and compare before and after on any node.
 - **A live 3D preview:** your material on a sphere, cube, plane or draped cloth, with real displacement from the height map. Switch between your sources and what the preset will export, so a wrong channel or a flipped normal shows before you export.
 - **Checks:** mixed sizes, normal maps that are not unit length, a missing map for an output and more, with a fix button where it can help.

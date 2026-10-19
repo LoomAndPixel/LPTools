@@ -12,12 +12,21 @@ Windows 10 or 11, 64-bit. A graphics card with OpenGL 3.0 shows the 3D view. If 
 
 ## Install and update
 
-1. Unzip the whole download to a folder you like, for example `C:\Tools\Repack`.
-2. Start `Repack.exe`.
+There are two downloads. Use whichever you like.
 
-Nothing is installed and nothing is written outside that folder, apart from your presets and settings, which live in `Documents\LP_Tools\Data\Repack`. To update, unzip the new download over the old folder, or into a new one. Your presets and settings are kept. To remove Repack, delete the folder.
+**Installer (recommended):** run `Repack-0.9.3-setup.exe` and follow the steps. By default it installs for your own user account only, into `AppData\Local\Programs\LP Tools\Repack`, so Windows doesn't ask for an administrator password. The first page also lets you install for all users instead, into `C:\Program Files\LP Tools\Repack`, which does ask for administrator rights. It adds Repack to an LP Tools folder in the Start menu and can add a desktop shortcut. To update, run the new installer: it replaces the old version. To remove Repack, use Windows Settings, Apps: it asks whether to delete your presets and settings too, and the default is to keep them.
 
-**If Windows says "Windows protected your PC":** this beta is not code signed yet, so SmartScreen may show this box the first time. Click **More info**, then **Run anyway**. You can also right click the zip, choose Properties, tick **Unblock**, and unzip afterwards. Repack never uploads your files. Its only network use is an optional once-a-day check for a newer version, and **Help > Check for updates automatically** turns it off.
+**Portable zip:** unzip `Repack-0.9.3-portable.zip` anywhere you like, for example into `C:\Tools`. It makes one folder called `Repack`: start `Repack.exe` inside it. Nothing is installed. To update, unzip the new download over the old folder. To remove Repack, delete the folder.
+
+Both keep your presets and settings in `Documents\LP_Tools\Data\Repack`, so updating or removing Repack never touches them. Your license also stays on the computer when you remove Repack, so installing it again doesn't use another seat.
+
+**If Windows says "Windows protected your PC":** this beta is not code signed yet, so SmartScreen may show this box the first time. Click **More info**, then **Run anyway**. You can also right click the zip, choose Properties, tick **Unblock**, and unzip afterwards. Repack never uploads your files. It goes online only to check your license key (when you enter it, then about once a month, sending just the key) and, optionally, once a day to look for a newer version. **Help > Check for updates automatically** turns off the second one.
+
+## Activating
+
+Without a license key Repack runs as a demo: you can load textures, use the graph, the 3D view and the checks, but **Export** and the watch folder are locked (the bundled sample can still export). A strip at the top shows **Unlicensed**; click it, or use **Help > Enter license key...**, and paste the key from your Gumroad receipt email, then press **Activate**. An Individual license works on 3 computers and a Studio license on 10. Reinstalling on the same computer doesn't use another one. **Help > About Repack** shows who it is licensed to. Repack checks the key again about once a month in the background. If you are offline it keeps working, and it only goes back to demo mode if Gumroad says the key was refunded or is not valid. For a new computer, or to reset your count, email support@lptools.store.
+
+**Where the license is kept:** on your computer, in `%LOCALAPPDATA%\LP_Tools\Repack`. Removing or reinstalling Repack leaves it there on purpose, so a reinstall doesn't use another of your computers. Deleting that folder doesn't free the computer on our side: email support@lptools.store and we'll free it. The key is only checked with Gumroad when you activate and about once a month, and only the key is sent.
 
 ## Getting started
 
@@ -60,9 +69,11 @@ Presets built in: Unreal Engine, Unity URP, Unity Built-in, Unity URP (Specular)
 - **Save as...** stores your changed preset under a new name. **More...** exports to several presets at once.
 - **Convert only** keeps every file as is and only changes format, size or bit depth.
 
+**Unused files.** Files the preset doesn't read, such as the height map for Unreal or an SSS map, are exported as they are by default, under their own names (converted to the format, size and bit depth you chose). The checkbox **Also export unused files as is** under the preset controls it. When it is checked, each unused file has its own Write node in the graph. If you delete one of those nodes, only that file is left out for that material, and the box shows a dash (partly checked). Ctrl+Z brings the node back, and clicking the box puts every unused file back. Unchecking the box skips them all. With Convert only the box is locked on, because every file is already converted.
+
 ## The graph
 
-Each source file is a Read node with pins for its channels. Wires run to the pins of the output nodes. Drag from a pin to wire it, right click a wire to unplug it, and right click anywhere to add an operation, rename a node or add a Write node. The wheel zooms, the middle mouse button pans, **Fit** (F) frames everything and **Tidy** lays the nodes out again. Click a node to compare before and after at the bottom.
+Each source file is a Read node with pins for its channels. Wires run to the pins of the output nodes. Drag from a pin to wire it, right click a wire to unplug it, and right click an empty spot for every node you can add (a Write node, or Levels, Clamp, Threshold, Renormalize, Resize and Invert, each followed by the channel or output it goes on; on a roughness or gloss channel the Invert node adds a line saying Rough to Gloss or Gloss to Rough), and right click a wire or a Write node to add an operation there or rename it. Conversions the preset needs also appear on their own when a file and an output disagree (roughness and gloss, metal and specular), so most of the time you never add them yourself. The wheel zooms, the middle mouse button pans, **Fit** (F) frames everything and **Tidy** lays the nodes out again. Click a node to compare before and after at the bottom. Files the preset doesn't use get a Write node of their own, wired straight from their Read node, so you can see they are exported. Delete that node to leave the file out, or right click its Read node and choose **Add Write node** to bring it back.
 
 ## The 3D view
 
@@ -75,11 +86,13 @@ The 3D view shows the material on a sphere, a cube, a plane or a draped cloth. D
 
 ## Output options
 
-Open the **Output** section on the right. Format (PNG, TGA, JPG, TIFF or EXR), resize (keep, 512 to 8K or nearest power of two), bit depth (auto, 8, 16 or 32, with EXR as half or full float) and a dither switch for 16 to 8 bit. **Renormalize normal maps** cleans up resized normals.
+Open the **Output** section on the right. Format (PNG, TGA, JPG, TIFF, EXR or DDS), resize (keep, 512 to 8K or nearest power of two), bit depth (auto, 8, 16 or 32, with EXR as half or full float) and a dither switch for 16 to 8 bit. **Renormalize normal maps** cleans up resized normals.
+
+**DDS for games:** choose DDS and Repack compresses each map the way engines expect: base colour and other colour maps as BC7 (sRGB), normal maps as BC5, single channel maps (roughness, metal, AO, height) as BC4, packed maps such as ORM as BC7, and HDR data as BC6H. **Mipmaps** (on by default) writes the full chain of smaller sizes, and **Compression** can switch to smaller BC1 / BC3 files. Bit depth, dither and the EXR option are set by the compression, so they grey out. Sides are rounded up to a multiple of 4, and Repack warns when a size isn't a power of two. DDS is made with Microsoft's free texconv tool, which comes in the download.
+
+**File formats.** Repack reads PNG, JPG, TIFF, TGA, EXR, BMP, HDR and DDS, and writes PNG, TGA, JPG, TIFF, EXR and DDS. Not supported yet: PSD, KTX2 and WebP.
 
 Files and folders are named with templates. The defaults are `{set}_{suffix}` and `{folder}\Repack_{preset}`. Available tokens: `{set}`, `{suffix}`, `{preset}`, `{ext}`, `{res}`, `{folder}` and `{date}`. A live preview shows the result. `{set}` is the name Repack detected for the material. To use another name for one set, type it in the name field above the file rows (clear it to go back to the detected name). Right click an output's Write node in the graph and choose Rename to change its suffix, for example `D` instead of `BaseColor`. To send everything to one place, type a folder in **Output folder**.
-
-**Unused files** are files the preset doesn't read, such as an SSS map for a preset without one. They are converted and copied with their own name, or skipped, as you choose.
 
 ## Checks
 
@@ -111,7 +124,9 @@ Window size, panes and options are remembered. **Help > About Repack** shows the
 
 **A map shows as unassigned.** Its name doesn't say what it is. Pick its kind in the dropdown on its row.
 
-**Does it need internet?** No. The only network use is the optional update check.
+**Does it need internet?** Only briefly: to activate your key, for a check about once a month, and for the optional update check. Everything else works offline.
+
+**A DDS normal map looks red and green in a viewer.** That is expected: BC5 stores only two channels, and Unreal and Unity rebuild the blue one when they load it.
 
 **Where are my presets?** In `Documents\LP_Tools\Data\Repack`. Removing Repack doesn't touch them.
 
