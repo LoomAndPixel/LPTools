@@ -1,5 +1,5 @@
 {
-  "version": "0.9.10",
+  "version": "0.9.11",
   "url": "https://lptools.gumroad.com/l/Repack",
   "notes": "Blend materials: lay one material over another by its height (moss over brick) with sliders, breakup noise and a Save that keeps your whole session in one .repack file you can share. Detail normal node with a strength slider, generated maps and normal blend kept when you switch presets, C and M keys in the 3D view, and five bundled sample materials."
 }
