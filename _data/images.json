@@ -230,5 +230,17 @@
  "keyforge-graphbar-cover-panel.webp": [
   864,
   460
+ ],
+ "repack-blend.webp": [
+  1280,
+  768
+ ],
+ "repack-blend-mask.webp": [
+  1280,
+  768
+ ],
+ "repack-normal-blend.webp": [
+  700,
+  565
  ]
 }
