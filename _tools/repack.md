@@ -13,7 +13,7 @@ features:
 - Presets for Unreal, Unity (URP, Built-in, Specular), Godot and glTF, plus separate maps and Convert only
 - DirectX and OpenGL normal flips, roughness and gloss, metal and specular conversions
 - A node graph with a pin per channel, and a live 3D preview with real displacement
-- Blend materials: lay moss over brick by height, with sliders, and save blend kits
+- Blend materials: lay moss over stone or brick by height, with sliders, and save blend kits
 - Batch whole folders on every core, UDIM tiles and a watch folder
 ---
 
@@ -36,7 +36,7 @@ Drop in a folder of maps, pick a target, and Repack writes a correctly packed, n
 - **Batch work:** a whole folder of sets at once on every core, several presets in one go, UDIM tiles, and a watch folder that converts new sets as they appear.
 - **Safe:** your source textures are never touched, and nothing is written until you press Export.
 
-{% include figure.html slug="repack" name="blend" alt="A blend material in Repack: brick with moss, the blend nodes, sliders and the result on a sphere" caption="A blend material: moss laid over brick by the brick's height, with the sliders at the right." %}
+{% include figure.html slug="repack" name="blend" alt="A blend material in Repack: cobblestone with moss, the blend nodes, sliders and the result on a plane" caption="A blend material: moss laid over cobblestone by the stone's height, with the sliders at the right." %}
 
 ## Good to know
 

@@ -99,7 +99,7 @@ Each source file is a Read node with pins for its channels. Wires run to the pin
 
 A blend material lays one material over another by the first one's height map, for example moss that collects in the cracks of a brick wall. It is a row of its own in the materials list, after the sets. Load both materials, right click the brick and choose **Create blend using selected** (with two sets selected, the one you clicked is Material A and the other Material B), or use the blend button under the list for an empty one. Drag a set from the list onto **Material A** or **Material B** in the graph, or click the small arrow on a slot to pick one. **File > Load the blend material sample** makes one from the bundled brick and mossy ground.
 
-{% include figure.html slug="repack" name="blend" alt="A blend material: brick with moss, the three blend nodes, the sliders at the right and the result on the sphere" caption="A blend material: Material A, Material B and the Height blend node, with the sliders in a column at the right and the result in 3D." %}
+{% include figure.html slug="repack" name="blend" alt="A blend material: cobblestone with moss, the three blend nodes, the sliders at the right and the result on a plane" caption="A blend material: Material A, Material B and the Height blend node, with the sliders in a column at the right and the result in 3D." %}
 
 The graph shows three nodes: Material A (the base, its height drives the mask), Material B, and **Height blend**. The controls sit in a column to the right of the graph, and double clicking Height blend opens the same controls plus Material A and B:
 
