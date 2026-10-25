@@ -20,8 +20,8 @@
   595
  ],
  "keyforge-customizer.webp": [
-  720,
-  640
+  756,
+  636
  ],
  "keyforge-floating-slider.webp": [
   600,
@@ -52,12 +52,12 @@
   1200
  ],
  "keyforge-lite-ui.webp": [
-  1280,
-  82
+  1920,
+  96
  ],
  "keyforge-lite-ui-desc.webp": [
   730,
-  100
+  96
  ],
  "keyforge-overview-cover.webp": [
   1280,
@@ -76,15 +76,15 @@
   690
  ],
  "keyforge-ui.webp": [
-  1280,
-  118
+  1920,
+  96
  ],
  "keyforge-ui-desc.webp": [
   730,
-  144
+  96
  ],
  "keyforge-window.webp": [
-  500,
+  756,
   636
  ],
  "roll-anything-channels.webp": [
@@ -220,12 +220,12 @@
   438
  ],
  "keyforge-graphbar-1row.webp": [
-  1280,
-  50
+  1920,
+  90
  ],
  "keyforge-graphbar-2row.webp": [
-  1280,
-  106
+  1920,
+  124
  ],
  "keyforge-graphbar-cover-panel.webp": [
   864,
@@ -242,5 +242,13 @@
  "repack-normal-blend.webp": [
   700,
   565
+ ],
+ "keyforge-selection-sets.webp": [
+  560,
+  330
+ ],
+ "keyforge-ui-two-rows.webp": [
+  1920,
+  76
  ]
 }

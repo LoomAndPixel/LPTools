@@ -35,11 +35,11 @@ The dot next to KeyForge Lite shows what the sliders will change right now: the 
 
 ## The buttons
 
-Previous and next key on the selected controls. Smart Key, which keys without breaking the curves around it and copies neighbor tangent types. Reset Pose, which returns to rig defaults. Copy Pose and Paste Pose, matched by control name with namespaces ignored, so they work across scenes in one Maya session.
+Smart Key, which keys without breaking the curves around it and copies neighbor tangent types. Delete Keys. Nudge Left and Nudge Right, which move the targeted keys one frame. Copy Pose and Paste Pose, matched by control name with namespaces ignored, so they work across scenes in one Maya session. Reset Pose, which returns to rig defaults. Tint Red, which colors the targeted keys on the timeline. The bar is one slim 32 pixel row, the same look as the full KeyForge.
 
 ## Good to know
 
-The arrows at the left of the bar move it between three spots: above the Time Slider, between the Time Slider and the Range Slider, or below the Range Slider. Right-click the bar for Overshoot (sliders can go past both ends) and the Channel Box filter, so only the channels you highlight change.
+The arrows at the left of the bar move it between three spots: above the Time Slider, between the Time Slider and the Range Slider, or below the Range Slider. The gear menu (or a right-click on the bar) has Overshoot (sliders can go past both ends) and the Channel Box filter, so only the channels you highlight change.
 
 ## Want more?
 

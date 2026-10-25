@@ -54,9 +54,9 @@ Drag `KeyForgeLite_drag_and_drop_install.py` from the new download into Maya. It
 
 ## The buttons
 
-Previous and next key, Smart Key, Reset Pose, Copy Pose and Paste Pose.
+Smart Key, Delete Keys, Nudge Left and Nudge Right (one frame), Copy Pose, Paste Pose, Reset Pose and Tint Red. Delete Keys, Nudge and Tint act on the selected Graph Editor keys, else the keys in the highlighted Time Slider range, else the key on this frame.
 
-Right-click the bar for Overshoot, the Channel Box filter and the bar position.
+The gear (or a right-click on the bar) has Overshoot, the Channel Box filter and the bar position.
 
 ## Upgrading to KeyForge
 

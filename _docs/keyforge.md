@@ -55,15 +55,15 @@ If you have KeyForge Lite installed, installing KeyForge removes it for you.
 
 ## Hotkeys
 
-Right-click the bar and choose **Assign hotkeys**, then type "KeyForge" in the Hotkey Editor's search. Try the pop-up slider first. You can also make the S key run Smart Key.
+Open **KeyForge Tools** (gear menu, or right-click the bar), pick a tool in the Catalog, click the Hotkey box and press the keys. If the key is already taken, KeyForge asks before it replaces it. **Clear** takes the key away. Try the pop-up slider first. You can also make the S key run Smart Key, or use **Assign hotkeys** on the bar's right-click menu to work in Maya's Hotkey Editor.
 
 ## The Graph Bar
 
-{% include figure.html slug="keyforge" name="graphbar-2row" alt="The KeyForge Graph Bar inside Maya's Graph Editor, in two rows" caption="The KeyForge Graph Bar sits inside the Graph Editor, right under its own buttons. Two rows: tools above, channels below." %}
+{% include figure.html slug="keyforge" name="graphbar-1row" alt="The KeyForge Graph Bar in one row inside Maya's Graph Editor, with the channel fields beside the tools" caption="The KeyForge Graph Bar in one row: the tools, then the channel fields, right under the Graph Editor's own buttons." %}
 
-The Graph Bar puts the same tools inside the Graph Editor, so you can use them while you look at curves. The button at the far left switches between one row and two. Click the **?** at the right end for a short guide.
+The Graph Bar puts the same tools inside the Graph Editor, so you can use them while you look at curves. It starts in one row, with the tools and the channel fields side by side. The button at the far left switches between one row and two. Click the **?** at the right end for a short guide. What doesn't fit at a narrower width waits in the » menu.
 
-{% include figure.html slug="keyforge" name="graphbar-1row" alt="The KeyForge Graph Bar in one row, with the channel fields beside the tools" caption="One row: the channel fields sit right after the tools." %}
+{% include figure.html slug="keyforge" name="graphbar-2row" alt="The KeyForge Graph Bar in two rows, with the channel fields on the second row" caption="Two rows: tools above, channels below." %}
 
 **Channel fields.** Translate, Rotate and Scale of the object picked in the Graph Editor's list, like the Channel Box:
 
@@ -71,17 +71,58 @@ The Graph Bar puts the same tools inside the Graph Editor, so you can use them w
 - **Several at once:** click and drag across the small labels (Tx, Ty, Tz and so on) to select channels, and hold Ctrl to add more. Locked and hidden channels are skipped. Then type a value to set them all, or middle-drag a box to scrub them together (Ctrl for fine, Shift for coarse). One Ctrl+Z undoes a whole scrub.
 - **Right-click a channel** for Key, Remove key, Key Translate, Rotate or Scale, Lock and Unlock, Mute and Unmute, Break connections, Reset to default, and Copy and Paste value.
 
-## Pose Library and Selection Sets
+## Pose Library
 
 {% include figure.html slug="keyforge" name="pose-library" side="right" alt="KeyForge Pose Library with pose thumbnails" caption="The Pose Library saves poses with a thumbnail." %}
 
-The **Pose Library** saves poses with a thumbnail, sorted by character into your own folders, with 2 to 8 thumbnails per row. **Selection Sets** are named groups of controls, such as Face, Eyebrows or Left Hand, that you select with one click.
+Open it from the **Poses** button in KeyForge Tools, or from the Pose Library button on the bar. It is a persistent pose browser:
 
-## Customize the bar
+- **Characters and folders:** characters are listed on the left, each with the folders you make inside it (Face, Body, Hands, named however you like). Use **+ Character** and **+ Folder**, and right-click to rename or delete. Poses saved without a character go to *Unassigned*.
+- **Thumbnails:** pick a character or folder to see its poses as a grid on the right. The **Thumbnails** slider, or Ctrl + mouse wheel, sets how many fit in a row, from 2 to 8.
+- **Save:** select the controls, choose a character and folder, and save. KeyForge also captures the viewport as the thumbnail, a visual reference only that is not part of the pose data. Saving over an existing name asks before it replaces it.
+- **Apply:** double-click a pose, or select it and press **Apply**. Use the blend slider to bring a pose in part of the way. Applying makes keys on animated channels at the current frame and sets channels that aren't animated directly, all in one undo step.
+- **Organize:** drag poses onto a folder to move them, or use **Move...**. Search looks through every character. Right-click a pose to replace it with the current pose, retake its thumbnail or rename it, and use **Delete** to remove poses.
+- **Across rigs:** controls are matched by short name, so a pose saved on one rig applies to another with the same control names, even in a different namespace.
+- **Where it lives:** pose data is stored as JSON under `Data/KeyForge/PoseLibrary/<Character>/<Folder>/` in your LP Tools data folder, outside your scenes. A library from an earlier build is sorted into this layout the first time it opens.
 
-{% include figure.html slug="keyforge" name="customizer" side="left" alt="The KeyForge bar customizer" caption="Add, remove and reorder what shows on the bar." %}
+<div style="clear:both"></div>
 
-The bar is yours to arrange. The customizer lists the bar from left to right. Drag to reorder, or double-click or use the arrows to add or remove a tool. Search the list on the right to find one, such as bake, mirror or tint. The bar updates as you go, and anything that doesn't fit moves into the » menu. You can also use presets, two rows, group labels and text labels, change the size, and undo your changes.
+## Selection Sets
+
+{% include figure.html slug="keyforge" name="selection-sets" side="left" alt="The KeyForge Selection Sets window with one button per set" caption="The Selection Sets window: one button per set, with its control count." %}
+
+Selection Sets are named groups of controls, one button each. Open the window from the Selection Sets button on the bar (it sits beside Pose Library in two rows) or from the Select group in the gear menu.
+
+1. Select some controls.
+2. Click **+ New Set from Selection** and name it, for example Face, Eyebrows or Left Hand.
+3. Click the set any time to select its controls.
+
+- **Click** selects the set, **Shift + click** adds it to your selection, and **Ctrl + click** removes it.
+- **Right-click** a set to replace its controls with your current selection, add your selection to it, remove your selection from it, rename it or delete it.
+- The window grows and wraps as you make more sets, and shows how many controls each one holds.
+- Sets are ordinary Maya object sets saved in the scene, so they travel with the file.
+
+<div style="clear:both"></div>
+
+## One row or two, workspaces and slider slots
+
+The bar starts as one slim 32 pixel row: the 14 everyday buttons and three sliders. The rows button at the far left switches to two rows, which show every button on top and up to five sliders on the row below.
+
+{% include figure.html slug="keyforge" name="ui-two-rows" alt="The KeyForge bar in two rows" caption="Two rows: every button on top, five sliders below." %}
+
+- **Workspaces** (gear menu > Workspace): Essentials, Blocking, Polish, Layout and Rig, Full, and Classic, the exact 0.7 bar. A workspace never changes the row count. Save the current bar as your own preset from the same menu.
+- **Slider slots:** each slot has a small arrow that swaps its tool for any of the 25 sliders, and the choice is remembered.
+- **The gear:** the switches (Overshoot, Smart Euler, Channel Box filter, Auto Tint, Pause Viewport), Workspace, every command in groups, Settings, KeyForge Tools and the Quick Guide. Small pills next to the target dot show the Channel Box filter and Overshoot while they are on.
+
+## KeyForge Tools
+
+{% include figure.html slug="keyforge" name="window" side="right" alt="The KeyForge Tools window, Catalog tab" caption="The Catalog lists every tool with its hotkey and a star." %}
+
+Open it from the gear menu or by right-clicking the bar. The **Catalog** lists every tool by group, with search. Click a star to put a tool on the bar (in two rows it asks whether the tool shows in both modes or only in two rows). Pick a row to read what it does, give it a hotkey, run it, or, for a slider, drag the slider right there.
+
+{% include figure.html slug="keyforge" name="customizer" side="left" alt="The KeyForge Tools window, Bar tab" caption="The Bar tab: drag to reorder what shows on the bar." %}
+
+The **Bar** tab lists the bar from left to right. Drag to reorder, add a separator, or remove an item. The bar updates as you go, anything that doesn't fit moves into the » menu, and **Undo my changes** puts it back the way it was. The same tab has the two-row switch, group labels, text labels, size and colored icons. The **Settings** tab holds the options for the tools.
 
 ## Sliders
 
@@ -101,4 +142,4 @@ The bar is yours to arrange. The customizer lists the bar from left to right. Dr
 
 ## Try it first
 
-[KeyForge Lite](/tools/keyforge-lite/) is free and gives you the Tween, Blend to Neighbors and Pull / Push sliders plus Smart Key, Reset Pose and Copy / Paste Pose.
+[KeyForge Lite](/tools/keyforge-lite/) is free and gives you the Tween, Blend to Neighbors and Pull / Push sliders plus Smart Key, Delete Keys, Nudge, Copy / Paste Pose, Reset Pose and Tint.
