@@ -62,7 +62,7 @@ If a file is wrong or unknown, change its kind in the dropdown on its row. Set t
 
 ## Presets and the channel matrix
 
-Presets built in: Unreal Engine, Unity URP, Unity Built-in, Unity URP (Specular), Unity Standard (Specular), Godot, glTF, Separate maps with a GL normal, Separate maps with a DX normal, and **Convert only**. A preset is a list of output files, and each output has a channel matrix: which source goes into R, G, B and A, with an Invert box per channel. Change it and the graph follows, and the other way round.
+Presets built in: Unreal Engine, Unity URP / HDRP (one Mask Map: in URP Lit, plug it into both Metallic and Occlusion), Unity Built-in, Unity URP (Specular), Unity Standard (Specular), Godot, glTF, Separate maps with a GL normal, Separate maps with a DX normal, and **Convert only**. A preset is a list of output files, and each output has a channel matrix: which source goes into R, G, B and A, with an Invert box per channel. Change it and the graph follows, and the other way round.
 
 - **Normal maps:** Repack flips the green channel between DirectX and OpenGL for you, based on what you said the source is and what the preset wants.
 - **Roughness and gloss, metal and specular:** converted as needed, so a specular and gloss set can feed a metal and roughness preset.

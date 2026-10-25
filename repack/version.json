@@ -1,5 +1,5 @@
 {
-  "version": "0.9.11",
+  "version": "0.9.13",
   "url": "https://lptools.gumroad.com/l/Repack",
-  "notes": "Blend materials: lay one material over another by its height (moss over brick) with sliders, breakup noise and a Save that keeps your whole session in one .repack file you can share. Detail normal node with a strength slider, generated maps and normal blend kept when you switch presets, C and M keys in the 3D view, and five bundled sample materials."
+  "notes": "Make seamless per map: turn it on for the whole material or just the maps that need it, with a teal chip on each Read node. Faster PNG export and previews, a software rendering fallback for machines without a GPU, safer saves and an error log."
 }
