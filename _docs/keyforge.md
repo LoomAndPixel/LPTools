@@ -61,9 +61,9 @@ Open **KeyForge Tools** (gear menu, or right-click the bar), pick a tool in the 
 
 {% include figure.html slug="keyforge" name="graphbar-1row" alt="The KeyForge Graph Bar in one row inside Maya's Graph Editor, with the channel fields beside the tools" caption="The KeyForge Graph Bar in one row: the tools, then the channel fields, right under the Graph Editor's own buttons." %}
 
-The Graph Bar puts the same tools inside the Graph Editor, so you can use them while you look at curves. It starts in one row, with the tools and the channel fields side by side. The button at the far left switches between one row and two. Click the **?** at the right end for a short guide. What doesn't fit at a narrower width waits in the » menu.
+The Graph Bar puts the same tools inside the Graph Editor, so you can use them while you look at curves. In a wide editor it is one row, with the tools and the channel fields side by side. When the editor is narrower, it switches to two rows by itself, with the channel fields below the tools, so nothing gets hidden. Only a very narrow editor folds the last tools into a » menu. Click the **?** at the right end for a short guide.
 
-{% include figure.html slug="keyforge" name="graphbar-2row" alt="The KeyForge Graph Bar in two rows, with the channel fields on the second row" caption="Two rows: tools above, channels below." %}
+{% include figure.html slug="keyforge" name="graphbar-2row" alt="The KeyForge Graph Bar in two rows, with the channel fields on the second row" caption="In a narrower editor it switches to two rows by itself: tools above, channels below." %}
 
 **Channel fields.** Translate, Rotate and Scale of the object picked in the Graph Editor's list, like the Channel Box:
 
