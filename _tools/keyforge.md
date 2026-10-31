@@ -4,8 +4,8 @@ slug: keyforge
 dcc: maya
 gumroad: KeyForgeForMaya
 name: KeyForge for Maya
-maya_versions: "2025, 2026, 2027"
-maya_tested: "2025, 2027"
+maya_versions: "2024, 2025, 2026, 2027"
+maya_tested: "2024, 2025, 2027"
 title: KeyForge, a Maya Animation Toolkit
 description: KeyForge is a Maya animation toolkit with a tween machine, pose library
   and fast keying tools for animators.
@@ -75,4 +75,4 @@ Right-click a slider on the bar for a floating, movable, resizable slider with f
 
 ## Requirements
 
-For Maya 2025, 2026 and 2027. Tested in Maya 2025 and 2027. Maya 2026 runs the same Python as 2025.
+For Maya 2024, 2025, 2026 and 2027. Tested in Maya 2024, 2025 and 2027. Maya 2026 runs the same Python as 2025.
