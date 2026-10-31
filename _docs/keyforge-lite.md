@@ -8,7 +8,7 @@ tool: keyforge-lite
 
 ## Requirements
 
-Maya 2025, 2026 or 2027. Tested in Maya 2025 and 2027. Maya 2026 runs the same Python as 2025.
+Maya 2024, 2025, 2026 or 2027. Tested in Maya 2024, 2025 and 2027. Maya 2026 runs the same Python as 2025.
 
 ## Install
 
@@ -25,7 +25,7 @@ To remove it, choose LP Tools menu > KeyForge Lite > Uninstall.
 
 **B. By hand, with two lines of Python**
 
-1. Copy the whole `lp_keyforge_lite` folder from `KeyForgeLite\python\py311` (Maya 2025 or 2026) or `KeyForgeLite\python\py313` (Maya 2027) into your Maya scripts folder, `Documents\maya\scripts`.
+1. Copy the whole `lp_keyforge_lite` folder from `KeyForgeLite\python\py310` (Maya 2024), `KeyForgeLite\python\py311` (Maya 2025 or 2026) or `KeyForgeLite\python\py313` (Maya 2027) into your Maya scripts folder, `Documents\maya\scripts`.
 2. Restart Maya, then run these lines in the Script Editor (Python tab):
 
 ```python

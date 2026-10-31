@@ -4,9 +4,9 @@ slug: keyforge-lite
 dcc: maya
 gumroad: KeyForgeLiteForMaya
 name: KeyForge Lite for Maya
-maya_versions: "2025, 2026, 2027"
-maya_tested: "2025, 2027"
-compat_note: "Uses Python 3 and PySide6."
+maya_versions: "2024, 2025, 2026, 2027"
+maya_tested: "2024, 2025, 2027"
+compat_note: "Uses Python 3 and PySide2 or PySide6."
 title: Free Maya Tween Machine, KeyForge Lite
 description: KeyForge Lite is a free tween machine animation bar for Maya. Slide between
   poses and breakdown keys quickly.
@@ -47,4 +47,4 @@ KeyForge Lite is a small, free starter. The full [KeyForge](/tools/keyforge/) ad
 
 ## Requirements
 
-For Maya 2025, 2026 and 2027, using Python 3 and PySide6. Free for personal and commercial work, including client projects.
+For Maya 2024, 2025, 2026 and 2027, using Python 3 and PySide2 or PySide6. Free for personal and commercial work, including client projects.
